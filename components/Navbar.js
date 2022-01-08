@@ -52,7 +52,7 @@ export default function Navbar() {
             <Image layout="fill" src="/images/menu.svg" alt="menu" />
           </a>
         </button>
-        {/*  bg-gradient-to-r from-[#2c3e50] to-[#000000] */}
+
         <ul
           className={`${
             showNav

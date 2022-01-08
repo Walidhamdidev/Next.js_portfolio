@@ -62,16 +62,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* <div className="w1/2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-          perspiciatis, consequatur alias in libero aspernatur ratione soluta
-          consequuntur, dolore voluptas fugit? Sequi a sed beatae ullam libero
-          dolor nihil reprehenderit iusto provident rerum ipsa expedita nesciunt
-          atque, repudiandae impedit illum veritatis hic tenetur culpa? Ipsam
-          dignissimos incidunt eos tempore corporis dolorum eaque tenetur
-          possimus earum fugit accusamus architecto ut facere enim deleniti odio
-          nisi
-        </div> */}
       </div>
     </div>
   );

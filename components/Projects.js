@@ -50,24 +50,6 @@ const Projects = () => {
         My Recent Work
       </p>
 
-      {/* <div className="filter space-x-5 py-5 flex  justify-center items-center flex-wrap">
-        <button className="text-black bg-yellow-500 inline-block py-1 px-3 mb-2 hover:bg-yellow-400 rounded-lg">
-          All
-        </button>
-        <button className="text-black bg-yellow-500 inline-block py-1 px-3 mb-2 hover:bg-yellow-400 rounded-lg">
-          Landing page
-        </button>
-        <button className="text-black bg-yellow-500 inline-block py-1 px-3 mb-2 hover:bg-yellow-400 rounded-lg">
-          Headless WordPress
-        </button>
-        <button className="text-black bg-yellow-500 inline-block py-1 px-3 mb-2 hover:bg-yellow-400 rounded-lg">
-          Headless Shopify
-        </button>
-        <button className="text-black bg-yellow-500 inline-block py-1 px-3 mb-2 hover:bg-yellow-400 rounded-lg">
-          Mobile Apps
-        </button>
-      </div> */}
-
       <div className="grid gap-5   md:grid-cols-2 ">
         {items.map((item) => {
           return (
