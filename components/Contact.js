@@ -1,3 +1,5 @@
+import React from "react";
+
 const Contact = () => {
   return (
     <div className="mt-20 mx-auto lg:px-52 px-10">
