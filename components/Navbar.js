@@ -1,25 +1,51 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { useRouter } from "next/router";
+import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
-  const userouter = useRouter();
+  const router = useRouter();
   const [showNav, setShowNav] = useState(false);
+  const [showBgNav, setShowBgNav] = useState(false);
+
+  const dropdown = useRef(null);
+
+  useEffect(() => {
+    // only add the event listener when the dropdown is opened
+    if (!showNav) return;
+    function handleClick(event) {
+      if (dropdown.current && !dropdown.current.contains(event.target)) {
+        setShowNav(false);
+      }
+    }
+    window.addEventListener("click", handleClick);
+    // clean up
+    return () => window.removeEventListener("click", handleClick);
+  }, [showNav]);
+
+  useEffect(() => {
+    const showBg = () => {
+      if (window.scrollY > 300) {
+        setShowBgNav(true);
+      }
+      if (window.scrollY < 300) {
+        setShowBgNav(false);
+      }
+    };
+
+    window.addEventListener("scroll", showBg);
+  }, [showBgNav]);
 
   return (
     <div
-      className={`   
-      bg-[#2c3e5000] bg-opacity-90
+      className={` 
+      sticky
+      top-0 
+      transition-all 
+       bg-opacity-90 ${showBgNav ? "bg-[#2c3e50]" : "bg-[#2c3e5000]"}
        text-white py-10  text-xl mx-auto lg:px-52 px-10`}
     >
       <nav className="container flex items-center justify-around">
-        {/* <Link href="/" className="cursor-pointer ml-10">
-          <a className="bg-white inline-block w-14 h-14 align-middle  transform transition-all hover:scale-110 relative overflow-hidden rounded-full">
-            <Image src="/images/profile.svg" layout="fill" alt="logo" />
-          </a>
-        </Link> */}
-
         <div className="flex">
           <Link href="/" className="cursor-pointer">
             <a
@@ -54,6 +80,7 @@ export default function Navbar() {
         </button>
 
         <ul
+          ref={dropdown}
           className={`${
             showNav
               ? `
@@ -73,36 +100,60 @@ export default function Navbar() {
         >
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
-            onClick={() => setShowNav(false)}
+            onClick={() => {
+              setShowNav(false);
+              window.scrollTo({
+                top: dropdown.current.offsetTop + 100,
+                behavior: "smooth",
+              });
+            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              userouter.pathname === "/" ? "text-yellow-500" : ""
+              router.pathname === "/" ? "text-yellow-500" : ""
             } `}
           >
-            <Link href="/">About</Link>
+            About
           </li>
           <li
-            onClick={() => setShowNav(false)}
+            onClick={() => {
+              setShowNav(false);
+              window.scrollTo({
+                top: 600,
+                behavior: "smooth",
+              });
+            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              userouter.pathname === "/projects" ? "text-yellow-500" : ""
+              router.pathname === "/projects" ? "text-yellow-500" : ""
             }`}
           >
-            <Link href="/projects">Projects</Link>
+            Projects
           </li>
           <li
-            onClick={() => setShowNav(false)}
+            onClick={() => {
+              setShowNav(false);
+              window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+              });
+            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              userouter.pathname === "/skills" ? "text-yellow-500" : ""
+              router.pathname === "/skills" ? "text-yellow-500" : ""
             }`}
           >
-            <Link href="/skills">Skills</Link>
+            Skills
           </li>
           <li
-            onClick={() => setShowNav(false)}
+            onClick={() => {
+              setShowNav(false);
+              window.scrollTo({
+                top: 1800,
+                behavior: "smooth",
+              });
+            }}
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              userouter.pathname === "/contact" ? "text-yellow-500" : ""
+              router.pathname === "/contact" ? "text-yellow-500" : ""
             }`}
           >
-            <Link href="/contact">Contact</Link>
+            Contact
           </li>
         </ul>
         {/* </div> */}

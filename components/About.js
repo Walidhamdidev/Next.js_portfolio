@@ -1,5 +1,5 @@
-import React from "react";
-import router, { useRouter } from "next/router";
+import React, { useRef } from "react";
+import { useRouter } from "next/router";
 
 function About() {
   const router = useRouter();
@@ -15,7 +15,7 @@ function About() {
     justify-center
     items-center
     text-center
-    mx-auto lg:px-52 px-10
+    mx-auto lg:px-52 px-5
     `}
     >
       <h1 className="md:text-7xl text-5xl bold mb-5">Hey there</h1>
