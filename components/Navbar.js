@@ -41,9 +41,17 @@ export default function Navbar() {
       className={` 
       sticky
       top-0 
+      flex
+      flex-col
+      justify-center
+      items-center
       transition-all 
-       bg-opacity-90 ${showBgNav ? "bg-[#2c3e50]" : "bg-[#2c3e5000]"}
-       text-white py-10  text-xl mx-auto lg:px-52 px-10`}
+       bg-opacity-90 ${
+         showBgNav
+           ? "bg-[#2c3e50] sm:px-32 px-5"
+           : "bg-[#2c3e5000] sm:px-52 px-10"
+       }
+       text-white py-10  text-xl mx-auto `}
     >
       <nav className="container flex items-center justify-around">
         <div className="flex">
@@ -69,7 +77,6 @@ export default function Navbar() {
           </Link>
           <div className="w-14 h-14 md:hidden"></div>
         </div>
-
         <button
           className="inline-block lg:hidden"
           onClick={() => setShowNav(!showNav)}
@@ -78,7 +85,6 @@ export default function Navbar() {
             <Image layout="fill" src="/images/menu.svg" alt="menu" />
           </a>
         </button>
-
         <ul
           ref={dropdown}
           className={`${
@@ -101,9 +107,11 @@ export default function Navbar() {
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
             onClick={() => {
+              // router.push("/");
               setShowNav(false);
+
               window.scrollTo({
-                top: dropdown.current.offsetTop + 100,
+                top: dropdown.current.offsetTop,
                 behavior: "smooth",
               });
             }}
@@ -115,9 +123,10 @@ export default function Navbar() {
           </li>
           <li
             onClick={() => {
+              // router.push("/");
               setShowNav(false);
               window.scrollTo({
-                top: 600,
+                top: dropdown.current.offsetTop,
                 behavior: "smooth",
               });
             }}
@@ -129,9 +138,10 @@ export default function Navbar() {
           </li>
           <li
             onClick={() => {
+              // router.push("/");
               setShowNav(false);
               window.scrollTo({
-                top: 1000,
+                top: dropdown.current.offsetTop,
                 behavior: "smooth",
               });
             }}
@@ -143,9 +153,10 @@ export default function Navbar() {
           </li>
           <li
             onClick={() => {
+              // router.push("/");
               setShowNav(false);
               window.scrollTo({
-                top: 1800,
+                top: dropdown.current.offsetTop,
                 behavior: "smooth",
               });
             }}
@@ -156,8 +167,6 @@ export default function Navbar() {
             Contact
           </li>
         </ul>
-        {/* </div> */}
-
         {/* social media linkedin and github */}
         <div className="flex items-center space-x-2 cursor-pointer">
           <Link href="https://github.com/walid-hamdi">
