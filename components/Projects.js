@@ -45,7 +45,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className=" mx-auto lg:px-52 px-5">
+    <div className=" mx-auto lg:px-52 px-5" id="projects">
       <p className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-5xl  border-yellow-500">
         My Recent Work
       </p>

@@ -1,14 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
-  const router = useRouter();
   const [showNav, setShowNav] = useState(false);
   const [showBgNav, setShowBgNav] = useState(false);
-
   const dropdown = useRef(null);
+  const router = useRouter();
+  const [hash, setHash] = useState("/#about");
+
+  // todo : 1- add scroll smooth , 2- add top position to scroll , 3- add framer motion
+  // contact page right side , hero right side , add dropdown bottom border animation
+
+  useEffect(() => {
+    if (router.pathname !== "/") {
+      setHash("");
+    }
+  }, []);
 
   useEffect(() => {
     // only add the event listener when the dropdown is opened
@@ -19,6 +28,7 @@ export default function Navbar() {
       }
     }
     window.addEventListener("click", handleClick);
+
     // clean up
     return () => window.removeEventListener("click", handleClick);
   }, [showNav]);
@@ -35,6 +45,22 @@ export default function Navbar() {
 
     window.addEventListener("scroll", showBg);
   }, [showBgNav]);
+
+  useEffect(() => {
+    const onHashChangeStart = (url) => {
+      setHash(url);
+    };
+
+    router.events.on("hashChangeStart", onHashChangeStart);
+
+    return () => {
+      router.events.off("hashChangeStart", onHashChangeStart);
+    };
+  }, [router.events]);
+
+  const handleScrollSection = () => {
+    setShowNav(false);
+  };
 
   return (
     <div
@@ -97,6 +123,8 @@ export default function Navbar() {
               font-bold
               uppercase 
               text-center
+              border-b-2 border-b-yellow-500
+              shadow-lg
               space-y-5
               bg-gradient-to-r from-[#314355] to-[#000000]
                
@@ -106,65 +134,49 @@ export default function Navbar() {
         >
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
-            onClick={() => {
-              // router.push("/");
-              setShowNav(false);
-
-              window.scrollTo({
-                top: dropdown.current.offsetTop,
-                behavior: "smooth",
-              });
-            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              router.pathname === "/" ? "text-yellow-500" : ""
+              hash === "/#about" ? "text-yellow-500" : ""
             } `}
           >
-            About
+            <Link href="#about" passHref>
+              <a
+                onClick={() => {
+                  scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                About
+              </a>
+            </Link>
           </li>
           <li
-            onClick={() => {
-              // router.push("/");
-              setShowNav(false);
-              window.scrollTo({
-                top: dropdown.current.offsetTop,
-                behavior: "smooth",
-              });
-            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              router.pathname === "/projects" ? "text-yellow-500" : ""
+              hash === "/#projects" ? "text-yellow-500" : ""
             }`}
           >
-            Projects
+            <Link href="#projects" passHref>
+              <a onClick={handleScrollSection}>Projects</a>
+            </Link>
           </li>
           <li
-            onClick={() => {
-              // router.push("/");
-              setShowNav(false);
-              window.scrollTo({
-                top: dropdown.current.offsetTop,
-                behavior: "smooth",
-              });
-            }}
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              router.pathname === "/skills" ? "text-yellow-500" : ""
+              hash === "/#skills" ? "text-yellow-500" : ""
             }`}
           >
-            Skills
+            <Link href="#skills" passHref>
+              <a onClick={handleScrollSection}> Skills</a>
+            </Link>
           </li>
           <li
-            onClick={() => {
-              // router.push("/");
-              setShowNav(false);
-              window.scrollTo({
-                top: dropdown.current.offsetTop,
-                behavior: "smooth",
-              });
-            }}
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              router.pathname === "/contact" ? "text-yellow-500" : ""
+              hash === "/#contact" ? "text-yellow-500" : ""
             }`}
           >
-            Contact
+            <Link href="#contact" passHref>
+              <a onClick={handleScrollSection}>Contact</a>
+            </Link>
           </li>
         </ul>
         {/* social media linkedin and github */}

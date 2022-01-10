@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
@@ -7,6 +7,7 @@ function About() {
 
   return (
     <motion.div
+      id="about"
       initial="hidden"
       animate="visible"
       variants={{

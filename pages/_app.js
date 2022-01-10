@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Waleedo - Web developer</title>
+        <title>Waleedo - web developer</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
