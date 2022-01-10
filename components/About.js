@@ -1,13 +1,30 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 function About() {
   const router = useRouter();
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
       className={`
     h-screen
+  
     flex
     flex-col
     -mt-10
@@ -30,7 +47,7 @@ function About() {
         </span>{" "}
         <span className="block">web developer</span>
       </h1>
-      <p className="text-2xl mb-7">React.js / Next.js</p>
+      {/* <p className="text-2xl mb-7">React.js / Next.js</p> */}
       <button
         className="bg-yellow-300 mt-4 text-black active:bg-yellow-400 text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none"
         onClick={(e) => {
@@ -40,7 +57,7 @@ function About() {
       >
         Discover More
       </button>
-    </div>
+    </motion.div>
   );
 }
 

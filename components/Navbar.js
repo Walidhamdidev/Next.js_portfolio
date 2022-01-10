@@ -92,7 +92,7 @@ export default function Navbar() {
               ? `
               absolute
               top-32
-             
+               z-50
               py-10
               font-bold
               uppercase 

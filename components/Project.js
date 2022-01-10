@@ -1,8 +1,26 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Project = ({ title, url, stacks, description }) => {
   return (
-    <div className="w-full h-full p-5 bg-gray-800 bg-opacity-90 text-white  rounded-sm shadow-md cursor-pointer ">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
+      className="w-full h-full p-5 bg-gray-800 bg-opacity-90 text-white  rounded-sm shadow-md cursor-pointer "
+    >
       <p className="font-bold text-2xl uppercase mb-5">{title}</p>
       <p>{description}</p>
       <div className="mt-5">
@@ -22,7 +40,7 @@ const Project = ({ title, url, stacks, description }) => {
           </span>
         </a>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
