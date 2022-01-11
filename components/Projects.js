@@ -7,10 +7,12 @@ const Projects = () => {
       url: "https://thenewtunisia.vercel.app/",
 
       stacks: [
-        { title: "React.js" },
-        { title: "Firebase" },
+        { title: "Next.js" },
+        { title: "Peer.js" },
+        { title: "Context" },
         { title: "D3.js" },
-        { title: "SASS" },
+        { title: "Firebase" },
+        { title: "CSS modules" },
       ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
@@ -20,8 +22,10 @@ const Projects = () => {
       url: "https://streaming-videos-kv86v273u-walid-hamdi.vercel.app/",
       stacks: [
         { title: "Next.js" },
-        { title: "Node.js" },
-        { title: "Material-UI" },
+        { title: "Youtube API" },
+        { title: "Context" },
+        { title: "GraphQL" },
+        { title: "CSS modules" },
       ],
       description:
         "This web app is an e-commerce that provide goods for tunisian community",
@@ -30,7 +34,13 @@ const Projects = () => {
       title: "Injestic Ecommerce",
       url: "https://shopify-starter-8btdcxbx4-walid-hamdi.vercel.app/",
 
-      stacks: [{ title: "Next.js" }, { title: "Tailwindcss" }],
+      stacks: [
+        { title: "Next.js" },
+        { title: "TailwindCSS" },
+        { title: "Context" },
+        { title: "GraphQL" },
+        { title: "Shopify" },
+      ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
     },
@@ -38,7 +48,13 @@ const Projects = () => {
       title: "Find Around",
       url: "https://find-around.vercel.app/",
 
-      stacks: [{ title: "Next.js" }, { title: "Tailwindcss" }],
+      stacks: [
+        { title: "Next.js" },
+        { title: "YOJ API" },
+        { title: "Unsplash API" },
+        { title: "Context" },
+        { title: "CSS modules" },
+      ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
     },

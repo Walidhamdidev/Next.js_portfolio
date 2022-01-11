@@ -10,8 +10,14 @@ export default function Navbar() {
   const router = useRouter();
   const [hash, setHash] = useState("/");
 
-  // todo : 1- add scroll smooth , 2- add top position to scroll , 3-
-  // contact page right side , hero right side , add dropdown animation , custom cursor
+  /* todo : 
+  1- add scroll smooth , 
+  2- add top position to scroll , 
+  3- contact page right side , 
+  4- hero right side ,
+  5- add dropdown animation , 
+  6- custom cursor
+*/
 
   useEffect(() => {
     // only add the event listener when the dropdown is opened
@@ -170,7 +176,11 @@ export default function Navbar() {
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
               target="_blank"
             >
-              <Image layout="fill" src="/images/github.svg" alt="github" />
+              <Image
+                layout="fill"
+                src="/images/github.svg"
+                alt="github social media icon"
+              />
             </a>
           </Link>
 
@@ -179,7 +189,11 @@ export default function Navbar() {
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
               target="_blank"
             >
-              <Image layout="fill" src="/images/youtube.svg" alt="github" />
+              <Image
+                layout="fill"
+                src="/images/youtube.svg"
+                alt="youtube social media icon"
+              />
             </a>
           </Link>
         </div>
