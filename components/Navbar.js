@@ -8,16 +8,10 @@ export default function Navbar() {
   const [showBgNav, setShowBgNav] = useState(false);
   const dropdown = useRef(null);
   const router = useRouter();
-  const [hash, setHash] = useState("/#about");
+  const [hash, setHash] = useState("/");
 
-  // todo : 1- add scroll smooth , 2- add top position to scroll , 3- add framer motion
-  // contact page right side , hero right side , add dropdown bottom border animation
-
-  useEffect(() => {
-    if (router.pathname !== "/") {
-      setHash("");
-    }
-  }, []);
+  // todo : 1- add scroll smooth , 2- add top position to scroll , 3-
+  // contact page right side , hero right side , add dropdown animation , custom cursor
 
   useEffect(() => {
     // only add the event listener when the dropdown is opened
@@ -37,8 +31,7 @@ export default function Navbar() {
     const showBg = () => {
       if (window.scrollY > 300) {
         setShowBgNav(true);
-      }
-      if (window.scrollY < 300) {
+      } else if (window.scrollY < 300) {
         setShowBgNav(false);
       }
     };
@@ -81,7 +74,7 @@ export default function Navbar() {
     >
       <nav className="container flex items-center justify-around">
         <div className="flex">
-          <Link href="/" className="cursor-pointer">
+          <Link href="/#about" className="cursor-pointer">
             <a
               className={`
             bg-white align-middle 
@@ -97,7 +90,7 @@ export default function Navbar() {
                 layout="fill"
                 objectFit="cover"
                 src="/images/profile.svg"
-                alt="github"
+                alt="profile logo picture"
               />
             </a>
           </Link>
@@ -139,16 +132,7 @@ export default function Navbar() {
             } `}
           >
             <Link href="#about" passHref>
-              <a
-                onClick={() => {
-                  scrollTo({
-                    top: 0,
-                    behavior: "smooth",
-                  });
-                }}
-              >
-                About
-              </a>
+              <a onClick={handleScrollSection}>About</a>
             </Link>
           </li>
           <li

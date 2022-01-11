@@ -6,6 +6,14 @@ const Project = ({ title, url, stacks, description }) => {
     <motion.div
       initial="hidden"
       animate="visible"
+      whileHover={{
+        position: "relative",
+        scale: [0.9, 1.2, 1],
+        rotate: [0, 10, -10, 0],
+        transition: {
+          duration: 0.2,
+        },
+      }}
       variants={{
         hidden: {
           scale: 0.8,
@@ -24,22 +32,25 @@ const Project = ({ title, url, stacks, description }) => {
       <p className="font-bold text-2xl uppercase mb-5">{title}</p>
       <p>{description}</p>
       <div className="mt-5">
+        <p className="pb-2 font-semibold">Tech Stack</p>
         {stacks.map((stack) => (
           <span
             key={stack.title}
-            className="inline-block border-2 m-1 border-gray-900 hover:bg-yellow-500 bg-white px-3 py-2 text-black rounded"
+            className="inline-block border-2 m-1 ml-0 border-gray-900 hover:bg-yellow-500 bg-white px-3 py-2 text-black rounded"
           >
             {stack.title}
           </span>
         ))}
       </div>
-      <Link href={url}>
-        <a target="_blank">
-          <span className="inline-block border-2 m-1 shadow-xl bg-yellow-500 transition hover:scale-105  px-3 py-2 text-black rounded">
-            Demo
-          </span>
-        </a>
-      </Link>
+      <div className=" mt-2">
+        <Link href={url}>
+          <a target="_blank">
+            <span className="inline-block border-2 m-1 shadow-xl bg-yellow-500 transition hover:scale-105  px-3 py-2 text-black rounded">
+              Demo
+            </span>
+          </a>
+        </Link>
+      </div>
     </motion.div>
   );
 };

@@ -3,17 +3,6 @@ import Project from "../components/Project";
 const Projects = () => {
   const items = [
     {
-      title: "Movie Streaming",
-      url: "https://streaming-videos-kv86v273u-walid-hamdi.vercel.app/",
-      stacks: [
-        { title: "Next.js" },
-        { title: "Node.js" },
-        { title: "Material-UI" },
-      ],
-      description:
-        "This web app is an e-commerce that provide goods for tunisian community",
-    },
-    {
       title: "The New Tunisia",
       url: "https://thenewtunisia.vercel.app/",
 
@@ -25,6 +14,17 @@ const Projects = () => {
       ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
+    },
+    {
+      title: "Movie Streaming",
+      url: "https://streaming-videos-kv86v273u-walid-hamdi.vercel.app/",
+      stacks: [
+        { title: "Next.js" },
+        { title: "Node.js" },
+        { title: "Material-UI" },
+      ],
+      description:
+        "This web app is an e-commerce that provide goods for tunisian community",
     },
     {
       title: "Injestic Ecommerce",
