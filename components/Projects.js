@@ -13,6 +13,7 @@ const Projects = () => {
         { title: "D3.js" },
         { title: "Firebase" },
         { title: "CSS modules" },
+        { title: "Framer  motion" },
       ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
@@ -26,6 +27,7 @@ const Projects = () => {
         { title: "Context" },
         { title: "GraphQL" },
         { title: "CSS modules" },
+        { title: "Framer  motion" },
       ],
       description:
         "This web app is an e-commerce that provide goods for tunisian community",
@@ -40,6 +42,7 @@ const Projects = () => {
         { title: "Context" },
         { title: "GraphQL" },
         { title: "Shopify" },
+        { title: "Framer  motion" },
       ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
@@ -54,6 +57,7 @@ const Projects = () => {
         { title: "Unsplash API" },
         { title: "Context" },
         { title: "CSS modules" },
+        { title: "Framer  motion" },
       ],
       description:
         "This web app is communcation system to solve issues exists in Tunisia",
