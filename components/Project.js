@@ -29,7 +29,8 @@ const Project = ({ title, url, stacks, description }) => {
           },
         },
       }}
-      className="w-full h-full p-5 bg-gray-800 bg-opacity-90 text-white  rounded-sm shadow-md cursor-pointer "
+      // cursor-pointer
+      className="w-full h-full p-5 bg-gray-800 bg-opacity-90 text-white  rounded-sm shadow-md "
     >
       <p className="font-bold text-2xl uppercase mb-5">{title}</p>
       <p>{description}</p>

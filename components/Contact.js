@@ -13,7 +13,7 @@ const Contact = () => {
         whileHover={{
           position: "relative",
           zIndex: 1,
-          cursor: "pointer",
+          // cursor: "pointer",
           scale: [1, 1, 1],
           rotate: [0, 10, -10, 0],
           transition: {

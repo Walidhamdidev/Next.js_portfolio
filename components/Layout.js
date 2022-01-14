@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import CustomCursor from "./CustomCursor";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <motion.div
         initial="pageInitial"

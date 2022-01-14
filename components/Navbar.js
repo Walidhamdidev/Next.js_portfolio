@@ -11,6 +11,7 @@ export default function Navbar() {
   const router = useRouter();
   const [hash, setHash] = useState("/");
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [widthScreen, setWidthScreen] = useState(0);
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -18,6 +19,9 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    const { innerWidth: width } = window;
+    setWidthScreen(width);
+
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
@@ -72,6 +76,10 @@ export default function Navbar() {
     closed: { opacity: 0, x: "-100%" },
   };
 
+  function isSmallScreen() {
+    return widthScreen < 1026;
+  }
+
   return (
     <div
       className={` 
@@ -93,7 +101,8 @@ export default function Navbar() {
     >
       <nav className="container flex items-center justify-around">
         <div className="flex">
-          <Link href="/#about" className="cursor-pointer">
+          {/* cursor-pointer */}
+          <Link href="/#about" className="">
             <a
               className={`
             bg-white align-middle 
@@ -123,8 +132,9 @@ export default function Navbar() {
             <Image layout="fill" src="/images/menu.svg" alt="menu" />
           </a>
         </button>
+
         <motion.ul
-          animate={showNav ? "open" : "closed"}
+          animate={isSmallScreen() ? (showNav ? "open" : "closed") : {}}
           variants={variants}
           ref={dropdown}
           className={`${
@@ -196,7 +206,8 @@ export default function Navbar() {
           </li>
         </motion.ul>
         {/* social media linkedin and github */}
-        <div className="flex items-center space-x-2 cursor-pointer">
+        <div className="flex items-center space-x-2 ">
+          {/* cursor-pointer */}
           <Link href="https://github.com/walid-hamdi">
             <a
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
