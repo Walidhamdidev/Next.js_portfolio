@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   const infoBox = (image, alt, label) => {
@@ -13,7 +14,7 @@ const Contact = () => {
           position: "relative",
           zIndex: 1,
           cursor: "pointer",
-          scale: [1, 1.4, 1.2],
+          scale: [1, 1, 1],
           rotate: [0, 10, -10, 0],
           transition: {
             duration: 0.2,
@@ -32,7 +33,7 @@ const Contact = () => {
             },
           },
         }}
-        className="flex items-center border-2 border-gray-800 p-3 rounded shadow"
+        className="flex items-center border-2 border-gray-800 p-2 rounded shadow"
       >
         <Link href="https://www.youtube.com/channel/UC5YyWAQ7uctClSMW7Nqf0qA">
           <a
@@ -49,7 +50,7 @@ const Contact = () => {
 
   return (
     <div
-      className="my-20 mx-auto lg:px-52 px-5 flex flex-col md:flex-row items-center justify-center gap-5"
+      className="my-20 mx-auto lg:px-52 px-5 flex flex-col md:flex-row items-center justify-center gap-10"
       id="contact"
     >
       <div>
@@ -63,52 +64,8 @@ const Contact = () => {
                 <h4 className="text-2xl mb-4 text-black font-semibold">
                   Send A Message
                 </h4>
-                <form>
-                  <div className=" w-full mb-3">
-                    <label
-                      className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      className="border-0 px-3 py-3 rounded text-sm shadow w-full
-                    bg-gray-300 placeholder-black text-gray-800 outline-none focus:bg-gray-400"
-                      placeholder=" "
-                      required
-                    />
-                  </div>
-                  <div className=" w-full mb-3">
-                    <label
-                      className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      maxLength="300"
-                      name="feedback"
-                      id="feedback"
-                      rows="4"
-                      cols="80"
-                      className="border-0 px-3 py-3 bg-gray-300 placeholder-black text-gray-800 rounded text-sm shadow focus:outline-none w-full"
-                      placeholder=""
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="text-center mt-6">
-                    <button
-                      id="feedbackBtn"
-                      className="bg-yellow-300 text-black text-center mx-auto active:bg-yellow-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="submit"
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </form>
+
+                <ContactForm />
               </div>
             </div>
           </div>
