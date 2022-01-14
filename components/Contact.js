@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <div
-      className="my-20 mx-auto lg:px-52 px-5 flex flex-col md:flex-row items-center justify-center gap-10"
+      className="my-20 mx-auto lg:px-52 px-5 flex flex-col md:flex-row items-center justify-center  md:gap-10"
       id="contact"
     >
       <div>

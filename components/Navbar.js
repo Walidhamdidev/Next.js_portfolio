@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -9,15 +10,20 @@ export default function Navbar() {
   const dropdown = useRef(null);
   const router = useRouter();
   const [hash, setHash] = useState("/");
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  /* todo : 
-  1- add scroll smooth , 
-  2- add top position to scroll , 
-  3- contact page right side , 
-  4- hero right side ,
-  5- add dropdown animation , 
-  6- custom cursor
-*/
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     // only add the event listener when the dropdown is opened
@@ -35,9 +41,9 @@ export default function Navbar() {
 
   useEffect(() => {
     const showBg = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > 250) {
         setShowBgNav(true);
-      } else if (window.scrollY < 300) {
+      } else if (window.scrollY < 250) {
         setShowBgNav(false);
       }
     };
@@ -61,6 +67,11 @@ export default function Navbar() {
     setShowNav(false);
   };
 
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+
   return (
     <div
       className={` 
@@ -70,13 +81,15 @@ export default function Navbar() {
       flex-col
       justify-center
       items-center
-      transition-all 
-       bg-opacity-90 ${
-         showBgNav
-           ? "bg-[#2c3e50] sm:px-32 px-5"
-           : "bg-[#2c3e5000] sm:px-52 px-10"
-       }
-       text-white py-10  text-xl mx-auto `}
+      transition-all
+      z-50
+      bg-opacity-90
+        ${
+          showBgNav
+            ? "bg-[#2c3e50] sm:px-32 px-5"
+            : "bg-[#2c3e5000] sm:px-52 px-10"
+        }
+       text-white py-8  text-xl mx-auto `}
     >
       <nav className="container flex items-center justify-around">
         <div className="flex">
@@ -110,19 +123,21 @@ export default function Navbar() {
             <Image layout="fill" src="/images/menu.svg" alt="menu" />
           </a>
         </button>
-        <ul
+        <motion.ul
+          animate={showNav ? "open" : "closed"}
+          variants={variants}
           ref={dropdown}
           className={`${
             showNav
               ? `
               absolute
-              top-32
+              top-28
                z-50
               py-10
               font-bold
               uppercase 
               text-center
-              border-b-2 border-b-yellow-500
+              border-b-2 border-b-white
               shadow-lg
               space-y-5
               bg-gradient-to-r from-[#314355] to-[#000000]
@@ -134,7 +149,10 @@ export default function Navbar() {
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              hash === "/#about" ? "text-yellow-500" : ""
+              hash === "/#about" ||
+              (scrollPosition >= 0 && scrollPosition < 580)
+                ? "text-yellow-500"
+                : ""
             } `}
           >
             <Link href="#about" passHref>
@@ -143,7 +161,10 @@ export default function Navbar() {
           </li>
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              hash === "/#projects" ? "text-yellow-500" : ""
+              hash === "/#projects" ||
+              (scrollPosition >= 580 && scrollPosition < 1480)
+                ? "text-yellow-500"
+                : ""
             }`}
           >
             <Link href="#projects" passHref>
@@ -152,7 +173,10 @@ export default function Navbar() {
           </li>
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              hash === "/#skills" ? "text-yellow-500" : ""
+              hash === "/#skills" ||
+              (scrollPosition >= 1480 && scrollPosition < 1940)
+                ? "text-yellow-500"
+                : ""
             }`}
           >
             <Link href="#skills" passHref>
@@ -161,14 +185,16 @@ export default function Navbar() {
           </li>
           <li
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              hash === "/#contact" ? "text-yellow-500" : ""
+              hash === "/#contact" || scrollPosition >= 1940
+                ? "text-yellow-500"
+                : ""
             }`}
           >
             <Link href="#contact" passHref>
               <a onClick={handleScrollSection}>Contact</a>
             </Link>
           </li>
-        </ul>
+        </motion.ul>
         {/* social media linkedin and github */}
         <div className="flex items-center space-x-2 cursor-pointer">
           <Link href="https://github.com/walid-hamdi">

@@ -8,6 +8,7 @@ const Project = ({ title, url, stacks, description }) => {
       animate="visible"
       whileHover={{
         position: "relative",
+        zIndex: 1,
         // scale: [0.9, 1.2, 1],
         scale: [1, 1, 1],
         rotate: [0, 10, -10, 0],
