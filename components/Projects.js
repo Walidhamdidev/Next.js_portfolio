@@ -34,8 +34,7 @@ const Projects = () => {
     },
     {
       title: "Injestic Ecommerce",
-      url: "https://shopify-starter-8btdcxbx4-walid-hamdi.vercel.app/",
-
+      url: "https://shopify-starter-3ggzl838v-walid-hamdi.vercel.app/",
       stacks: [
         { title: "Next.js" },
         { title: "TailwindCSS" },
