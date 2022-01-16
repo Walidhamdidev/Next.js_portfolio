@@ -15,8 +15,7 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description:
-        "This web app is communcation system to solve issues exists in Tunisia",
+      description: "Digital communication platform",
     },
     {
       title: "Movie Streaming",
@@ -29,12 +28,11 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description:
-        "This web app is an e-commerce that provide goods for tunisian community",
+      description: "Streaming videos platform",
     },
     {
-      title: "Injestic Ecommerce",
-      url: "https://shopify-starter-3ggzl838v-walid-hamdi.vercel.app/",
+      title: "E-commerce",
+      url: "https://shopify-starter-walid-hamdi.vercel.app/",
       stacks: [
         { title: "Next.js" },
         { title: "TailwindCSS" },
@@ -43,8 +41,7 @@ const Projects = () => {
         { title: "Shopify" },
         { title: "Framer  motion" },
       ],
-      description:
-        "This web app is communcation system to solve issues exists in Tunisia",
+      description: "Headless E-commerce that provide goods",
     },
     {
       title: "Find Around",
@@ -58,8 +55,7 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description:
-        "This web app is communcation system to solve issues exists in Tunisia",
+      description: "Allows you to find stores, places near me",
     },
   ];
 
