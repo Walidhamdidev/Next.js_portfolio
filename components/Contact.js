@@ -49,32 +49,32 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className="my-20 mx-auto lg:px-52 px-5 flex flex-col md:flex-row items-center justify-center  md:gap-10"
-      id="contact"
-    >
-      <div>
-        <p className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-5xl  border-yellow-500">
-          Contact Me
-        </p>
-        <div className="flex justify-between pb-10">
-          <div className="w-full">
-            <div className=" flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
-              <div className="flex-auto p-5 lg:p-10">
-                <h4 className="text-2xl mb-4 text-black font-semibold">
-                  Send A Message
-                </h4>
+    <div className="my-20 mx-auto lg:px-52 px-5" id="contact">
+      <div className=" flex flex-col md:flex-row items-center   md:gap-10">
+        <div>
+          <p className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-5xl  border-yellow-500">
+            Contact Me
+          </p>
+          <div className="flex justify-between pb-10">
+            <div className="w-full">
+              <div className=" flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                <div className="flex-auto p-5 lg:p-10">
+                  <h4 className="text-2xl mb-4 text-black font-semibold">
+                    Send A Message
+                  </h4>
 
-                <ContactForm />
+                  <ContactForm />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className=" relative  md:block space-y-10 ">
-        {infoBox("email.svg", "email icon", "Walidhamdidev@gmail.com")}
-        {infoBox("whatsapp.svg", "What's up icon", "+21650055380")}
-        {infoBox("place.svg", "place icon", "Tunisia")}
+
+        <div className=" relative  md:block space-y-10 ">
+          {infoBox("email.svg", "email icon", "Walidhamdidev@gmail.com")}
+          {infoBox("whatsapp.svg", "What's up icon", "+21650055380")}
+          {infoBox("place.svg", "place icon", "Tunisia")}
+        </div>
       </div>
     </div>
   );

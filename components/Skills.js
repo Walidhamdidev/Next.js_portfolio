@@ -21,10 +21,6 @@ const Skills = () => {
 
   return (
     <div className="mt-20  mx-auto lg:px-52 px-5" id="skills">
-      {/* <p className="border-b-2 inline-flex  text-white mt-10 font-bold text-3xl uppercase border-yellow-500">
-        Technical skills
-      </p> */}
-
       <p className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-5xl  border-yellow-500">
         Technical skills
       </p>

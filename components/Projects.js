@@ -19,7 +19,7 @@ const Projects = () => {
     },
     {
       title: "Movie Streaming",
-      url: "https://streaming-videos-kv86v273u-walid-hamdi.vercel.app/",
+      url: "https://streamingvideos.vercel.app/",
       stacks: [
         { title: "Next.js" },
         { title: "Youtube API" },
@@ -32,7 +32,7 @@ const Projects = () => {
     },
     {
       title: "E-commerce",
-      url: "https://shopify-starter-walid-hamdi.vercel.app/",
+      url: "https://injestic.vercel.app/",
       stacks: [
         { title: "Next.js" },
         { title: "TailwindCSS" },
@@ -45,7 +45,7 @@ const Projects = () => {
     },
     {
       title: "Find Around",
-      url: "https://find-around.vercel.app/",
+      url: "https://findaround.vercel.app/",
 
       stacks: [
         { title: "Next.js" },
