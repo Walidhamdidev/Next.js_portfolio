@@ -49,8 +49,9 @@ const Projects = () => {
 
       stacks: [
         { title: "Next.js" },
-        { title: "YOJ API" },
+        { title: "Foursquare API " },
         { title: "Unsplash API" },
+        { title: "Airtable" },
         { title: "Context" },
         { title: "CSS modules" },
         { title: "Framer  motion" },
