@@ -15,6 +15,7 @@ const Skills = () => {
     { skill: "D3.js" },
     { skill: "Node.js" },
     { skill: "GraphQL" },
+    { skill: "NoSQL" },
     { skill: "SQL" },
     { skill: "Git" },
     { skill: "Docker" },
