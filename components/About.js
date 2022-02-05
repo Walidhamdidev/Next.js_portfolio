@@ -78,6 +78,9 @@ function About() {
           </Link>
         </motion.button>
       </div>
+      <div className=" relative hidden md:block">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quasi!
+      </div>
 
       {/* <div className=" relative hidden md:block">
         <svg xmlns="http://www.w3.org/2000/svg" width="451" height="437">
