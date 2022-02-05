@@ -159,8 +159,8 @@ export default function Navbar() {
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              hash === "/#about" ||
-              (scrollPosition >= 0 && scrollPosition < 580)
+              // hash === "/#about" ||
+              scrollPosition >= 0 && scrollPosition < 580
                 ? "text-yellow-500"
                 : ""
             } `}
@@ -171,8 +171,8 @@ export default function Navbar() {
           </li>
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              hash === "/#projects" ||
-              (scrollPosition >= 580 && scrollPosition < 1480)
+              // hash === "/#projects" ||
+              scrollPosition >= 580 && scrollPosition < 1480
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -183,8 +183,8 @@ export default function Navbar() {
           </li>
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
-              hash === "/#skills" ||
-              (scrollPosition >= 1480 && scrollPosition < 1940)
+              // hash === "/#skills" ||
+              scrollPosition >= 1480 && scrollPosition < 1940
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -195,9 +195,8 @@ export default function Navbar() {
           </li>
           <li
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              hash === "/#contact" || scrollPosition >= 1940
-                ? "text-yellow-500"
-                : ""
+              // hash === "/#contact" ||
+              scrollPosition >= 1940 ? "text-yellow-500" : ""
             }`}
           >
             <Link href="#contact" passHref>
