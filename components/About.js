@@ -60,23 +60,23 @@ function About() {
             <span className="text-yellow-400 hidden md:inline-block">.</span>
           </span>
         </h1>
-        {/* <p className="text-2xl mb-7">React.js / Next.js</p> */}
-        <motion.button
-          whileHover={{
-            position: "relative",
-            zIndex: 1,
-            scale: [0.9, 1.2, 1],
-            rotate: [0, 10, -10, 0],
-            transition: {
-              duration: 0.2,
-            },
-          }}
-          className="bg-yellow-300 mt-4 text-black active:bg-yellow-400 text-sm px-6 py-3 font-semibold rounded shadow hover:shadow-lg outline-none focus:outline-none"
-        >
-          <Link href="https://thenewtunisia.vercel.app/">
-            <a target="_blank">Discover More</a>
-          </Link>
-        </motion.button>
+        <Link href="https://thenewtunisia.vercel.app/" passHref>
+          <motion.a
+            whileHover={{
+              position: "relative",
+              zIndex: 1,
+              scale: [0.9, 1.2, 1],
+              rotate: [0, 10, -10, 0],
+              transition: {
+                duration: 0.2,
+              },
+            }}
+            target="_blank"
+            className="bg-yellow-300 mt-4 inline-block  text-black active:bg-yellow-400 text-sm px-6 py-3 font-semibold rounded shadow hover:shadow-lg outline-none focus:outline-none"
+          >
+            Discover More
+          </motion.a>
+        </Link>
       </div>
 
       <div className=" relative hidden md:block">
