@@ -72,7 +72,7 @@ const Contact = () => {
 
         <div className=" relative  md:block space-y-10 ">
           {infoBox("email.svg", "email icon", "Walidhamdidev@gmail.com")}
-          {infoBox("whatsapp.svg", "What's up icon", "+21650055380")}
+          {infoBox("whatsapp.svg", "What's up icon", "+21656560457‌")}
           {infoBox("place.svg", "place icon", "Tunisia")}
         </div>
       </div>
