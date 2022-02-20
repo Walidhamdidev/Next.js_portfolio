@@ -11,7 +11,7 @@ const Projects = () => {
         { title: "Peer.js" },
         { title: "Context" },
         { title: "D3.js" },
-        { title: "PWA.js" },
+        { title: "PWA" },
         { title: "Firebase" },
         { title: "CSS modules" },
         { title: "Framer  motion" },
