@@ -117,7 +117,7 @@ export default function Navbar() {
               <Image
                 layout="fill"
                 objectFit="cover"
-                src="/images/profile.svg"
+                src="/images/profile.jpg"
                 alt="profile logo picture"
               />
             </a>

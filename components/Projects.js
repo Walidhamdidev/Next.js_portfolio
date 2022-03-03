@@ -10,7 +10,7 @@ const Projects = () => {
         { title: "Next.js" },
         { title: "Peer.js" },
         { title: "Context" },
-        { title: "D3.js" },
+        // { title: "D3.js" },
         { title: "PWA" },
         { title: "Firebase" },
         { title: "CSS modules" },
@@ -63,7 +63,7 @@ const Projects = () => {
 
   return (
     <div className=" mx-auto lg:px-52 px-5" id="projects">
-      <p className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-5xl  border-yellow-500">
+      <p className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
         My Recent Works
       </p>
 

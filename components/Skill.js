@@ -29,7 +29,7 @@ export default function Skill({ skill }) {
         },
       }}
       //  cursor-pointer
-      className=" bg-gray-800 text-3xl rounded-md p-5 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black"
+      className=" bg-gray-800 text-xl rounded-md p-5 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black"
     >
       {skill}
     </motion.li>
