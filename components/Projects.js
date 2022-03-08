@@ -3,7 +3,7 @@ import Project from "../components/Project";
 const Projects = () => {
   const items = [
     {
-      title: "The New Tunisia",
+      title: "Communication System",
       url: "https://thenewtunisia.vercel.app/",
 
       stacks: [
@@ -16,7 +16,20 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description: "Digital communication platform",
+      description: "Voice Communication Platform",
+    },
+    {
+      title: "Headless E-Commerce",
+      url: "https://injestic.vercel.app/",
+      stacks: [
+        { title: "Next.js" },
+        { title: "TailwindCSS" },
+        { title: "Context" },
+        { title: "GraphQL" },
+        { title: "Shopify" },
+        { title: "Framer  motion" },
+      ],
+      description: "Headless E-Commerce that provides goods",
     },
     {
       title: "Movie Streaming",
@@ -30,19 +43,6 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description: "Streaming videos platform",
-    },
-    {
-      title: "E-commerce",
-      url: "https://injestic.vercel.app/",
-      stacks: [
-        { title: "Next.js" },
-        { title: "TailwindCSS" },
-        { title: "Context" },
-        { title: "GraphQL" },
-        { title: "Shopify" },
-        { title: "Framer  motion" },
-      ],
-      description: "Headless E-commerce that provide goods",
     },
     {
       title: "Find Around",
