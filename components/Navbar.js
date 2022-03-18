@@ -125,12 +125,13 @@ export default function Navbar() {
           <div className="w-14 h-14 md:hidden"></div>
         </div>
         <button
+          passHref
           className="inline-block lg:hidden"
           onClick={() => setShowNav(!showNav)}
         >
-          <a className="block  relative w-12 h-12">
+          <h1 className="block  relative w-12 h-12">
             <Image layout="fill" src="/images/menu.svg" alt="menu" />
-          </a>
+          </h1>
         </button>
 
         <motion.ul

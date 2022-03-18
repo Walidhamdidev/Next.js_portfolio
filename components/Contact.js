@@ -52,9 +52,9 @@ const Contact = () => {
     <div className="my-20 mx-auto lg:px-52 px-5" id="contact">
       <div className=" flex flex-col md:flex-row items-center   md:gap-10">
         <div>
-          <p className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
+          <h1 className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
             Contact Me
-          </p>
+          </h1>
           <div className="flex justify-between pb-10">
             <div className="w-full">
               <div className=" flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">

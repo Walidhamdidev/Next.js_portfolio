@@ -63,9 +63,9 @@ const Projects = () => {
 
   return (
     <div className=" mx-auto lg:px-52 px-5" id="projects">
-      <p className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
+      <h1 className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
         My Recent Works
-      </p>
+      </h1>
 
       <div className="grid gap-5   md:grid-cols-2 ">
         {items.map((item) => {
