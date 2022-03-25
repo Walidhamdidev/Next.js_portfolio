@@ -31,35 +31,35 @@ const Projects = () => {
       ],
       description: "Headless E-Commerce that provides goods",
     },
-    {
-      title: "Movie Streaming",
-      url: "https://streamingvideos.vercel.app/",
-      stacks: [
-        { title: "Next.js" },
-        { title: "Youtube API" },
-        { title: "Context" },
-        { title: "GraphQL" },
-        { title: "CSS modules" },
-        { title: "Magic auth" },
-        { title: "Framer  motion" },
-      ],
-      description: "Streaming videos platform",
-    },
-    {
-      title: "Find Around",
-      url: "https://findaround.vercel.app/",
+    // {
+    //   title: "Movie Streaming",
+    //   url: "https://streamingvideos.vercel.app/",
+    //   stacks: [
+    //     { title: "Next.js" },
+    //     { title: "Youtube API" },
+    //     { title: "Context" },
+    //     { title: "GraphQL" },
+    //     { title: "CSS modules" },
+    //     { title: "Magic auth" },
+    //     { title: "Framer  motion" },
+    //   ],
+    //   description: "Streaming videos platform",
+    // },
+    // {
+    //   title: "Find Around",
+    //   url: "https://findaround.vercel.app/",
 
-      stacks: [
-        { title: "Next.js" },
-        { title: "Foursquare API " },
-        { title: "Unsplash API" },
-        { title: "Airtable" },
-        { title: "Context" },
-        { title: "CSS modules" },
-        { title: "Framer  motion" },
-      ],
-      description: "Allows you to find stores nearby",
-    },
+    //   stacks: [
+    //     { title: "Next.js" },
+    //     { title: "Foursquare API " },
+    //     { title: "Unsplash API" },
+    //     { title: "Airtable" },
+    //     { title: "Context" },
+    //     { title: "CSS modules" },
+    //     { title: "Framer  motion" },
+    //   ],
+    //   description: "Allows you to find stores nearby",
+    // },
   ];
 
   return (
