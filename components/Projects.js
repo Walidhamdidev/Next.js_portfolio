@@ -40,6 +40,7 @@ const Projects = () => {
         { title: "Context" },
         { title: "GraphQL" },
         { title: "CSS modules" },
+        { title: "Magic auth" },
         { title: "Framer  motion" },
       ],
       description: "Streaming videos platform",

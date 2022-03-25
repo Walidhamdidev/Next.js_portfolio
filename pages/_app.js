@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Waleedo - web developer</title>
+        <title>Walid Hamdi - Web Developer</title>
       </Head>
       <motion.div
         initial="pageInitial"
