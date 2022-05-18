@@ -7,20 +7,24 @@ const Skills = () => {
     { skill: "Sass" },
     { skill: "JavaScript" },
     { skill: "TypeScript" },
+    { skill: "SQL" },
+    { skill: "NoSQL" },
+    { skill: "Git" },
     { skill: "TailwindCSS" },
+    { skill: "Bootstrap" },
     { skill: "React.js" },
+    { skill: "Redux" },
+    { skill: "React Native" },
     { skill: "Next.js" },
     { skill: "Node.js" },
+    { skill: "APIs" },
     { skill: "GraphQL" },
-    { skill: "NoSQL" },
-    { skill: "SQL" },
-    { skill: "Git" },
     { skill: "Docker" },
   ];
 
   return (
-    <div className="mt-20  mx-auto lg:px-52 px-5" id="skills">
-      <h1 className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
+    <div className="mt-14  mx-auto lg:px-52 px-5" id="skills">
+      <h1 className="border-b-4 inline-flex pb-1 text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
         Technical skills
       </h1>
 

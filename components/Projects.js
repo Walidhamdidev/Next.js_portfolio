@@ -3,68 +3,44 @@ import Project from "../components/Project";
 const Projects = () => {
   const items = [
     {
-      title: "Communication System",
+      title: "Thenewtunisia.com",
       url: "https://thenewtunisia.vercel.app/",
 
       stacks: [
         { title: "Next.js" },
         { title: "Peer.js" },
-        { title: "Context" },
+        { title: "WebRTC" },
+        { title: "Socket.io" },
+        { title: "Context API" },
         // { title: "D3.js" },
         { title: "PWA" },
         { title: "Firebase" },
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description: "Voice Communication Platform",
+      description:
+        "This is a communication system where people can connect together by voice to build Tunisian community",
     },
     {
-      title: "Headless E-Commerce",
+      title: "Injestic.com",
       url: "https://injestic.vercel.app/",
       stacks: [
         { title: "Next.js" },
+        { title: "TypeScript" },
         { title: "TailwindCSS" },
-        { title: "Context" },
+        { title: "Context API" },
         { title: "GraphQL" },
         { title: "Shopify" },
         { title: "Framer  motion" },
       ],
-      description: "Headless E-Commerce that provides goods",
+      description:
+        "Store to sell products online based on shopify as a backend",
     },
-    // {
-    //   title: "Movie Streaming",
-    //   url: "https://streamingvideos.vercel.app/",
-    //   stacks: [
-    //     { title: "Next.js" },
-    //     { title: "Youtube API" },
-    //     { title: "Context" },
-    //     { title: "GraphQL" },
-    //     { title: "CSS modules" },
-    //     { title: "Magic auth" },
-    //     { title: "Framer  motion" },
-    //   ],
-    //   description: "Streaming videos platform",
-    // },
-    // {
-    //   title: "Find Around",
-    //   url: "https://findaround.vercel.app/",
-
-    //   stacks: [
-    //     { title: "Next.js" },
-    //     { title: "Foursquare API " },
-    //     { title: "Unsplash API" },
-    //     { title: "Airtable" },
-    //     { title: "Context" },
-    //     { title: "CSS modules" },
-    //     { title: "Framer  motion" },
-    //   ],
-    //   description: "Allows you to find stores nearby",
-    // },
   ];
 
   return (
     <div className=" mx-auto lg:px-52 px-5" id="projects">
-      <h1 className="border-b-4 inline-flex pb-1  text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
+      <h1 className="border-b-4 inline-flex pb-1  text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
         My Recent Works
       </h1>
 

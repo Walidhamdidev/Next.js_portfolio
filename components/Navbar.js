@@ -125,7 +125,6 @@ export default function Navbar() {
           <div className="w-14 h-14 md:hidden"></div>
         </div>
         <button
-          passHref
           className="inline-block lg:hidden"
           onClick={() => setShowNav(!showNav)}
         >
@@ -173,7 +172,7 @@ export default function Navbar() {
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
               // hash === "/#projects" ||
-              scrollPosition >= 580 && scrollPosition < 1480
+              scrollPosition >= 600 && scrollPosition < 1222.2
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -185,7 +184,7 @@ export default function Navbar() {
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
               // hash === "/#skills" ||
-              scrollPosition >= 1480 && scrollPosition < 1940
+              scrollPosition >= 1222.2 && scrollPosition < 1622.2
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -197,7 +196,7 @@ export default function Navbar() {
           <li
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
               // hash === "/#contact" ||
-              scrollPosition >= 1940 ? "text-yellow-500" : ""
+              scrollPosition >= 1623 ? "text-yellow-500" : ""
             }`}
           >
             <Link href="#contact" passHref>

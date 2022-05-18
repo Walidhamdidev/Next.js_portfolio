@@ -39,7 +39,7 @@ const Project = ({ title, url, stacks, description }) => {
         {stacks.map((stack) => (
           <span
             key={stack.title}
-            className="inline-block border-2 m-1 ml-0 border-gray-900 hover:bg-yellow-500 bg-white px-3 py-2 text-black rounded"
+            className="inline-block border-2 m-1 ml-0 border-gray-900 hover:bg-yellow-500 bg-white px-2 py-1 text-black rounded"
           >
             {stack.title}
           </span>

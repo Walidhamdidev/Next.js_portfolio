@@ -35,9 +35,9 @@ const Contact = () => {
         }}
         className="flex items-center border-2 border-gray-800 p-2 rounded shadow"
       >
-        <Link href="https://www.youtube.com/channel/UC5YyWAQ7uctClSMW7Nqf0qA">
+        <Link href="#">
           <a
-            className="relative w-12 h-12 block transform transition-all hover:scale-110"
+            className="relative w-12 h-10 block transform transition-all hover:scale-110"
             target="_blank"
           >
             <Image layout="fill" src={`/images/${image}`} alt={alt} />
@@ -49,13 +49,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="my-20 mx-auto lg:px-52 px-5" id="contact">
+    <div className="mt-14 mx-auto lg:px-52 px-5" id="contact">
       <div className=" flex flex-col md:flex-row items-center   md:gap-10">
         <div>
-          <h1 className="border-b-4 inline-flex pb-1 text-white  mb-14 font-bold text-3xl md:text-4xl  border-yellow-500">
+          <h1 className="border-b-4 inline-flex pb-1 text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
             Contact Me
           </h1>
-          <div className="flex justify-between pb-10">
+          <div className="flex justify-between ">
             <div className="w-full">
               <div className=" flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                 <div className="flex-auto p-5 lg:p-10">
