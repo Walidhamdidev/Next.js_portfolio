@@ -30,7 +30,8 @@ function About() {
     md:flex-row
     -mt-10
     gap-5
-    
+    justify-evenly	
+    lg:justify-start
     items-center
     text-center
     md:text-left
