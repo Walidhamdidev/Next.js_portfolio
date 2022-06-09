@@ -172,7 +172,7 @@ export default function Navbar() {
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
               // hash === "/#projects" ||
-              scrollPosition >= 600 && scrollPosition < 950.2
+              scrollPosition >= 600 && scrollPosition < 980.2
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -184,7 +184,7 @@ export default function Navbar() {
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
               // hash === "/#skills" ||
-              scrollPosition >= 950.2 && scrollPosition < 1200.2
+              scrollPosition >= 980.2 && scrollPosition < 1200.2
                 ? "text-yellow-500"
                 : ""
             }`}
