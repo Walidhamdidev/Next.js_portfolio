@@ -14,12 +14,13 @@ const Skills = () => {
     { skill: "Bootstrap" },
     { skill: "React.js" },
     { skill: "Redux" },
-    { skill: "React Native" },
     { skill: "Next.js" },
     { skill: "Node.js" },
     { skill: "APIs" },
     { skill: "GraphQL" },
     { skill: "Docker" },
+    { skill: "Dart" },
+    { skill: "Flutter" },
   ];
 
   return (
