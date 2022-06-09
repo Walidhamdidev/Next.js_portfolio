@@ -19,7 +19,7 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description:
-        "This is a communication system where people can connect together by voice to build Tunisian community",
+        "This is a communication system where people can connect together by voice digital community.",
     },
     {
       title: "Injestic.com",
@@ -34,7 +34,7 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description:
-        "Store to sell products online based on shopify as a backend",
+        "Store to sell products online based on shopify as a backend.",
     },
   ];
 
