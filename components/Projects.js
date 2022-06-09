@@ -18,8 +18,7 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description:
-        "This is a communication system where people can connect together by voice digital community.",
+      description: "Voice based communication system platform.",
     },
     {
       title: "Injestic.com",
