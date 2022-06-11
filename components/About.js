@@ -58,8 +58,8 @@ function About() {
             whileHover={{
               position: "relative",
               zIndex: 1,
-              scale: [0.9, 1.2, 1],
-              rotate: [0, 10, -10, 0],
+              scale: [0.9, 1.1, 1],
+              // rotate: [0, 10, -10, 0],
               transition: {
                 duration: 0.2,
               },

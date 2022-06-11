@@ -97,7 +97,7 @@ export default function Navbar() {
             ? "bg-[#2c3e50] sm:px-32 px-5"
             : "bg-[#2c3e5000] sm:px-52 px-10"
         }
-       text-white py-8  text-xl mx-auto `}
+       text-white py-4  text-xl mx-auto `}
     >
       <nav className="container flex items-center justify-around">
         <div className="flex">
