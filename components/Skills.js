@@ -7,8 +7,8 @@ const Skills = () => {
     { skill: "Sass" },
     { skill: "JavaScript" },
     { skill: "TypeScript" },
-    // { skill: "SQL" },
-    // { skill: "NoSQL" },
+    { skill: "SQL" },
+    { skill: "NoSQL" },
     { skill: "Git" },
     { skill: "TailwindCSS" },
     { skill: "Bootstrap" },
@@ -17,10 +17,10 @@ const Skills = () => {
     { skill: "Next.js" },
     { skill: "Node.js" },
     { skill: "APIs" },
-    // { skill: "GraphQL" },
-    // { skill: "Docker" },
-    // { skill: "Dart" },
-    // { skill: "Flutter" },
+    { skill: "GraphQL" },
+    { skill: "Docker" },
+    { skill: "Dart" },
+    { skill: "Flutter" },
   ];
 
   return (
