@@ -3,7 +3,7 @@ import Project from "../components/Project";
 const Projects = () => {
   const items = [
     {
-      title: "Thenewtunisia.com",
+      title: "thenewtunisia.com",
       url: "https://thenewtunisia.vercel.app/",
 
       stacks: [
@@ -21,7 +21,7 @@ const Projects = () => {
       description: "Voice based communication system platform.",
     },
     {
-      title: "Injestic.com",
+      title: "injestic.com",
       url: "https://injestic.vercel.app/",
       stacks: [
         { title: "Next.js" },
@@ -34,6 +34,17 @@ const Projects = () => {
       ],
       description:
         "Store to sell products online based on shopify as a backend.",
+    },
+    {
+      title: "imenheni.com",
+      url: "https://imenheni.com",
+      stacks: [
+        { title: "Next.js" },
+        { title: "TailwindCSS" },
+        { title: "Framer  motion" },
+        { title: "Sanity" },
+      ],
+      description: "Graphic designer portfolio",
     },
   ];
 
