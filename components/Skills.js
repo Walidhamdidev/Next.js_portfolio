@@ -11,7 +11,6 @@ const Skills = () => {
     // { skill: "NoSQL" },
     { skill: "Git" },
     { skill: "TailwindCSS" },
-    {skill: "Material UI"}
     { skill: "Bootstrap" },
     { skill: "React.js" },
     { skill: "Redux" },
