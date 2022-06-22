@@ -68,7 +68,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="relative  md:block space-y-10 ">
+        <div className="relative  md:block space-y-3 md:space-y-10">
           {infoBox("email.svg", "email icon", "walidhamdidev@gmail.com")}
           {infoBox("whatsapp.svg", "What's up icon", "+21656560457‌")}
           {infoBox("place.svg", "place icon", "Tunisia")}

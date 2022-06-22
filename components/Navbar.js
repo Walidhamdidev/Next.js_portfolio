@@ -141,7 +141,7 @@ export default function Navbar() {
             showNav
               ? `
               absolute
-              top-28
+              top-20
                z-50
               py-10
               font-bold
@@ -184,7 +184,11 @@ export default function Navbar() {
           <li
             className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
               // hash === "/#skills" ||
-              scrollPosition >= 1000.2 && scrollPosition < 1280.2
+              isSmallScreen()
+                ? scrollPosition >= 1000.2 && scrollPosition < 1800.2
+                  ? "text-yellow-500"
+                  : ""
+                : scrollPosition >= 1000.2 && scrollPosition < 1280.2
                 ? "text-yellow-500"
                 : ""
             }`}
@@ -196,7 +200,13 @@ export default function Navbar() {
           <li
             className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
               // hash === "/#contact" ||
-              scrollPosition >= 1280.2 ? "text-yellow-500" : ""
+              isSmallScreen()
+                ? scrollPosition >= 1800.2
+                  ? "text-yellow-500"
+                  : ""
+                : scrollPosition >= 1280.2
+                ? "text-yellow-500"
+                : ""
             }`}
           >
             <Link href="#contact" passHref>
