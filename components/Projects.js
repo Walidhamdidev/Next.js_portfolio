@@ -25,7 +25,6 @@ const Projects = () => {
       url: "https://injestic.vercel.app/",
       stacks: [
         { title: "Next.js" },
-        { title: "TypeScript" },
         { title: "TailwindCSS" },
         { title: "Context API" },
         { title: "GraphQL" },
@@ -34,17 +33,6 @@ const Projects = () => {
       ],
       description:
         "Store to sell products online based on shopify as a backend.",
-    },
-    {
-      title: "imenheni.com",
-      url: "https://imenheni.com",
-      stacks: [
-        { title: "Next.js" },
-        { title: "TailwindCSS" },
-        { title: "Framer  motion" },
-        { title: "Sanity" },
-      ],
-      description: "Graphic designer portfolio",
     },
   ];
 
