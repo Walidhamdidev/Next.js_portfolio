@@ -5,46 +5,46 @@ import Image from "next/image";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
-  const infoBox = (image, alt, label) => {
-    return (
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        whileHover={{
-          position: "relative",
-          zIndex: 1,
-          scale: [0.9, 1.1, 1],
-          transition: {
-            duration: 0.8,
-          },
-        }}
-        variants={{
-          hidden: {
-            scale: 0.8,
-            opacity: 0,
-          },
-          visible: {
-            scale: 1,
-            opacity: 1,
-            transition: {
-              delay: 0.4,
-            },
-          },
-        }}
-        className="flex items-center border-2 border-gray-800 p-2 rounded shadow"
-      >
-        <Link href="#">
-          <a
-            className="relative w-12 h-10 block transform transition-all hover:scale-110"
-            target="_blank"
-          >
-            <Image layout="fill" src={`/images/${image}`} alt={alt} />
-          </a>
-        </Link>
-        <p className="ml-2">{label}</p>
-      </motion.div>
-    );
-  };
+  // const infoBox = (image, alt, label) => {
+  //   return (
+  //     <motion.div
+  //       initial="hidden"
+  //       animate="visible"
+  //       whileHover={{
+  //         position: "relative",
+  //         zIndex: 1,
+  //         scale: [0.9, 1.1, 1],
+  //         transition: {
+  //           duration: 0.8,
+  //         },
+  //       }}
+  //       variants={{
+  //         hidden: {
+  //           scale: 0.8,
+  //           opacity: 0,
+  //         },
+  //         visible: {
+  //           scale: 1,
+  //           opacity: 1,
+  //           transition: {
+  //             delay: 0.4,
+  //           },
+  //         },
+  //       }}
+  //       className="flex items-center border-2 border-gray-800 p-2 rounded shadow"
+  //     >
+  //       <Link href="#">
+  //         <a
+  //           className="relative w-12 h-10 block transform transition-all hover:scale-110"
+  //           target="_blank"
+  //         >
+  //           <Image layout="fill" src={`/images/${image}`} alt={alt} />
+  //         </a>
+  //       </Link>
+  //       <p className="ml-2">{label}</p>
+  //     </motion.div>
+  //   );
+  // };
 
   return (
     <div className="mt-14 mx-auto lg:px-52 px-5" id="contact">
@@ -68,11 +68,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="relative  md:block space-y-3 md:space-y-10">
+        {/* <div className="relative  md:block space-y-3 md:space-y-10">
           {infoBox("email.svg", "email icon", "walidhamdidev@gmail.com")}
           {infoBox("whatsapp.svg", "What's up icon", "+21656560457‌")}
           {infoBox("place.svg", "place icon", "Tunisia")}
-        </div>
+        </div> */}
       </div>
     </div>
   );
