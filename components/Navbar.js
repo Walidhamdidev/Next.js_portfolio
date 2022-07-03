@@ -141,13 +141,14 @@ export default function Navbar() {
             showNav
               ? `
               absolute
+            
               top-20
                z-50
               py-10
               font-bold
               uppercase 
               text-center
-              border-b-2 border-b-white
+              
               shadow-lg
               space-y-5
               bg-gradient-to-r from-[#314355] to-[#000000]
@@ -158,10 +159,12 @@ export default function Navbar() {
         >
           {/* lg:inline lg:mt-0 lg:static lg:transform-none lg:capitalize lg:font-normal w-0 */}
           <li
-            className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
+            className={` transition duration-700 ease-in-out 
+           
+            hover:text-yellow-500  ${
               // hash === "/#about" ||
               scrollPosition >= 0 && scrollPosition < 580
-                ? "text-yellow-500"
+                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                 : ""
             } `}
           >
@@ -170,10 +173,12 @@ export default function Navbar() {
             </Link>
           </li>
           <li
-            className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
+            className={` transition duration-700 ease-in-out 
+            
+            hover:text-yellow-500   ${
               // hash === "/#projects" ||
               scrollPosition >= 600 && scrollPosition < 1000.2
-                ? "text-yellow-500"
+                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                 : ""
             }`}
           >
@@ -182,14 +187,16 @@ export default function Navbar() {
             </Link>
           </li>
           <li
-            className={` transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500 ${
+            className={`transition duration-700 ease-in-out 
+            
+            hover:text-yellow-500  ${
               // hash === "/#skills" ||
               isSmallScreen()
                 ? scrollPosition >= 1000.2 && scrollPosition < 1800.2
-                  ? "text-yellow-500"
+                  ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                   : ""
                 : scrollPosition >= 1000.2 && scrollPosition < 1280.2
-                ? "text-yellow-500"
+                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                 : ""
             }`}
           >
@@ -198,16 +205,18 @@ export default function Navbar() {
             </Link>
           </li>
           <li
-            className={`  transition duration-700 ease-in-out border-yellow-300 border-opacity-60 lg:border-b-2 hover:text-yellow-500  ${
-              // hash === "/#contact" ||
-              isSmallScreen()
-                ? scrollPosition >= 1800.2
-                  ? "text-yellow-500"
-                  : ""
-                : scrollPosition >= 1280.2
-                ? "text-yellow-500"
-                : ""
-            }`}
+            className={`  transition duration-700 ease-in-out 
+            
+             hover:text-yellow-500  ${
+               // hash === "/#contact" ||
+               isSmallScreen()
+                 ? scrollPosition >= 1800.2
+                   ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
+                   : ""
+                 : scrollPosition >= 1280.2
+                 ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
+                 : ""
+             }`}
           >
             <Link href="#contact" passHref>
               <a onClick={handleScrollSection}>Contact</a>

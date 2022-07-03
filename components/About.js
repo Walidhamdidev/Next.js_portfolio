@@ -53,7 +53,7 @@ function About() {
             <span className="text-yellow-400 hidden md:inline-block">.</span>
           </span>
         </h1>
-        <Link href="https://thenewtunisia.vercel.app/" passHref>
+        {/* <Link href="https://thenewtunisia.vercel.app/" passHref>
           <motion.a
             whileHover={{
               position: "relative",
@@ -69,7 +69,7 @@ function About() {
           >
             Discover More
           </motion.a>
-        </Link>
+        </Link> */}
       </div>
       <div className="mt-12 lg:mt-32 lg:ml-20 text-left">
         <bottom className="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-white animate-bounce hover:text-yellow-400 hover:bg-black transition duration-300 ease-in-out cursor-pointer">
