@@ -2,24 +2,26 @@ import Skill from "../components/Skill";
 
 const Skills = () => {
   const items = [
-    { skill: "HTML5" },
-    { skill: "CSS3" },
-    { skill: "Sass" },
-    { skill: "JavaScript" },
-    { skill: "TypeScript" },
-    { skill: "SQL" },
-    { skill: "NoSQL" },
-    { skill: "Git" },
-    { skill: "TailwindCSS" },
-    { skill: "Bootstrap" },
-    { skill: "React.js" },
-    { skill: "Redux" },
-    { skill: "Next.js" },
-    { skill: "Node.js" },
+    { skill: "HTML5", type: "foundation" },
+    { skill: "CSS3", type: "foundation" },
+    { skill: "Sass", type: "foundation" },
+    { skill: "JavaScript", type: "foundation" },
+    { skill: "TypeScript", type: "foundation" },
+    { skill: "SQL", type: "foundation" },
+    { skill: "NoSQL", type: "foundation" },
+    { skill: "Git", type: "foundation" },
+    { skill: "Docker", type: "foundation" },
+    { skill: "TailwindCSS", type: "cssFramework" },
+    { skill: "Bootstrap", type: "cssFramework" },
+    { skill: "Material UI", type: "cssFramework" },
+    { skill: "React.js", type: "jsFramework" },
+    { skill: "Next.js", type: "jsFramework" },
+    { skill: "Node.js", type: "jsFramework" },
+    { skill: "Redux", type: "jsFramework" },
+    { skill: "Angular", type: "jsFramework" },
     { skill: "Shopify" },
     { skill: "APIs" },
     { skill: "GraphQL" },
-    { skill: "Docker" },
     { skill: "Dart" },
     { skill: "Flutter" },
   ];
@@ -32,7 +34,7 @@ const Skills = () => {
 
       <ul className="">
         {items.map((item, index) => (
-          <Skill key={index} skill={item.skill} />
+          <Skill key={index} skill={item.skill} skillType={item.type} />
         ))}
       </ul>
     </div>

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-export default function Skill({ skill }) {
+export default function Skill({ skill, skillType }) {
   return (
     <motion.li
       initial="hidden"
@@ -29,7 +29,15 @@ export default function Skill({ skill }) {
         },
       }}
       //  cursor-pointer
-      className=" bg-gray-800 text-xl w-fit rounded-md p-3 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black"
+      className={`${
+        skillType === "foundation"
+          ? "bg-gray-900"
+          : skillType === "cssFramework"
+          ? "bg-gray-800"
+          : skillType === "jsFramework"
+          ? "bg-gray-700"
+          : "bg-slate-700"
+      }  text-xl w-fit rounded-md p-3 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black`}
     >
       {skill}
     </motion.li>
