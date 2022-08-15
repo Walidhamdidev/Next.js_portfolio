@@ -34,9 +34,11 @@ export default function Skill({ skill, skillType }) {
           ? "bg-gray-900"
           : skillType === "cssFramework"
           ? "bg-gray-800"
-          : skillType === "jsFramework"
+          : skillType === "frontend"
           ? "bg-gray-700"
-          : "bg-slate-700"
+          : skillType === "backend"
+          ? "bg-slate-700"
+          : ""
       }  text-xl w-fit rounded-md p-3 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black`}
     >
       {skill}
