@@ -13,7 +13,7 @@ const Skills = () => {
     { skill: "TailwindCSS", type: "cssFramework" },
     { skill: "React.js", type: "frontend" },
     { skill: "Next.js", type: "frontend" },
-    { skill: "Redux toolkit", type: "frontend" },
+    { skill: "Redux Toolkit", type: "frontend" },
     { skill: "Node.js", type: "backend" },
   ];
 
