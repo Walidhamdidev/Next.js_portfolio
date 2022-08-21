@@ -2,8 +2,7 @@ import Skill from "../components/Skill";
 
 const Skills = () => {
   const items = [
-    { skill: "HTML5", type: "foundation" },
-    { skill: "CSS3", type: "foundation" },
+    { skill: "HTML/CSS", type: "foundation" },
     { skill: "Sass", type: "foundation" },
     { skill: "JavaScript", type: "foundation" },
     { skill: "TypeScript", type: "foundation" },
@@ -12,13 +11,9 @@ const Skills = () => {
     { skill: "Git", type: "foundation" },
     { skill: "Docker", type: "foundation" },
     { skill: "TailwindCSS", type: "cssFramework" },
-    { skill: "BootStrap", type: "cssFramework" },
-    { skill: "Material UI", type: "cssFramework" },
     { skill: "React.js", type: "frontend" },
     { skill: "Next.js", type: "frontend" },
-    { skill: "Angular", type: "frontend" },
-    { skill: "Redux", type: "frontend" },
-    { skill: "Flutter", type: "frontend" },
+    { skill: "Redux toolkit", type: "frontend" },
     { skill: "Node.js", type: "backend" },
   ];
 
