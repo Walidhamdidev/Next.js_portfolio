@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
 
         <div className="relative self-center md:block space-y-8">
-          <Link href="https://www.instagram.com/walido_hamdi/">
+          {/* <Link href="https://www.instagram.com/walido_hamdi/">
             <a
               className="relative w-10 h-10 block transform transition-all hover:scale-110"
               target="_blank"
@@ -105,7 +105,7 @@ const Contact = () => {
                 alt="facebook social media icon"
               />
             </a>
-          </Link>
+          </Link> */}
 
           {/* {infoBox("email.svg", "email icon", "walidhamdidev@gmail.com")}
           {infoBox("whatsapp.svg", "What's up icon", "+21656560457‌")}

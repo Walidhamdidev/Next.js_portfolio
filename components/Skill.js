@@ -39,7 +39,7 @@ export default function Skill({ skill, skillType }) {
           : skillType === "backend"
           ? "bg-slate-700"
           : skillType === "new"
-          ? "bg-yellow-500 text-black"
+          ? "bg-yellow-400 text-black"
           : ""
       }  text-xl w-fit rounded-md p-3 my-1 mr-3 inline-block transition-colors hover:bg-white hover:text-black`}
     >
