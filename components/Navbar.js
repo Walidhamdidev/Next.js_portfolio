@@ -239,7 +239,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <Link href="https://www.youtube.com/channel/UCsYOmU1a31CEEMRcQaCxR5g">
+          <Link href="https://www.youtube.com/@walid-hamdi">
             <a
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
               target="_blank"
