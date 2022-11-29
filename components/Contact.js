@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <div className="mt-14 mx-auto lg:px-52 px-5" id="contact">
-      <div className=" flex flex-col md:flex-row items-center   md:gap-10">
+      <div className=" flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <h1 className="border-b-4 inline-flex pb-1 text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
             Contact Me
@@ -68,11 +68,49 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* <div className="relative  md:block space-y-3 md:space-y-10">
-          {infoBox("email.svg", "email icon", "walidhamdidev@gmail.com")}
+        <div className="relative self-center md:block space-y-8">
+          <Link href="https://www.instagram.com/walido_hamdi/">
+            <a
+              className="relative w-10 h-10 block transform transition-all hover:scale-110"
+              target="_blank"
+            >
+              <Image
+                layout="fill"
+                src="/images/instagram.svg"
+                alt="instagram social media icon"
+              />
+            </a>
+          </Link>
+
+          <Link href="https://twitter.com/walid_hamdi_">
+            <a
+              className="relative w-10 h-10 block transform transition-all hover:scale-110"
+              target="_blank"
+            >
+              <Image
+                layout="fill"
+                src="/images/twitter.svg"
+                alt="twitter social media icon"
+              />
+            </a>
+          </Link>
+          <Link href="https://www.facebook.com/walidhamdidev/">
+            <a
+              className="relative w-10 h-10 block transform transition-all hover:scale-110"
+              target="_blank"
+            >
+              <Image
+                layout="fill"
+                src="/images/facebook.svg"
+                alt="facebook social media icon"
+              />
+            </a>
+          </Link>
+
+          {/* {infoBox("email.svg", "email icon", "walidhamdidev@gmail.com")}
           {infoBox("whatsapp.svg", "What's up icon", "+21656560457‌")}
-          {infoBox("place.svg", "place icon", "Tunisia")}
-        </div> */}
+          {infoBox("place.svg", "place icon", "Tunisia")} */}
+        </div>
       </div>
     </div>
   );

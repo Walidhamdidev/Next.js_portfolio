@@ -15,6 +15,8 @@ const Skills = () => {
     { skill: "Next.js", type: "frontend" },
     { skill: "Redux Toolkit", type: "frontend" },
     { skill: "Node.js", type: "backend" },
+    { skill: "Strapi", type: "new" },
+    { skill: "Flutter", type: "new" },
   ];
 
   return (
