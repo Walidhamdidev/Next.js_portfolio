@@ -73,7 +73,7 @@ function About() {
       </div>
       <div className="mt-12 lg:mt-32 lg:ml-20 text-left">
         <bottom className="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-white animate-bounce hover:text-yellow-400 hover:bg-black transition duration-300 ease-in-out cursor-pointer">
-          <Link href="#projects" passHref>
+          <Link legacyBehavior href="#projects" passHref>
             <svg
               className="w-6 h-6"
               fill="none"

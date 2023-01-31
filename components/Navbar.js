@@ -102,7 +102,7 @@ export default function Navbar() {
       <nav className="container flex items-center justify-around">
         <div className="flex">
           {/* cursor-pointer */}
-          <Link href="/#about" className="">
+          <Link legacyBehavior href="/#about" className="">
             <a
               className={`
             bg-white align-middle 
@@ -168,7 +168,7 @@ export default function Navbar() {
                 : ""
             } `}
           >
-            <Link href="#about" passHref>
+            <Link legacyBehavior href="#about" passHref>
               <a onClick={handleScrollSection}>About</a>
             </Link>
           </li>
@@ -182,7 +182,7 @@ export default function Navbar() {
                 : ""
             }`}
           >
-            <Link href="#projects" passHref>
+            <Link legacyBehavior href="#projects" passHref>
               <a onClick={handleScrollSection}>Projects</a>
             </Link>
           </li>
@@ -200,7 +200,7 @@ export default function Navbar() {
                 : ""
             }`}
           >
-            <Link href="#skills" passHref>
+            <Link legacyBehavior href="#skills" passHref>
               <a onClick={handleScrollSection}> Skills</a>
             </Link>
           </li>
@@ -218,7 +218,7 @@ export default function Navbar() {
                  : ""
              }`}
           >
-            <Link href="#contact" passHref>
+            <Link legacyBehavior href="#contact" passHref>
               <a onClick={handleScrollSection}>Contact</a>
             </Link>
           </li>
@@ -226,7 +226,7 @@ export default function Navbar() {
         {/* social media linkedin and github */}
         <div className="flex items-center space-x-2 ">
           {/* cursor-pointer */}
-          <Link href="https://github.com/walid-hamdi">
+          <Link legacyBehavior href="https://github.com/walid-hamdi">
             <a
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
               target="_blank"
@@ -239,7 +239,7 @@ export default function Navbar() {
             </a>
           </Link>
 
-          <Link href="https://www.youtube.com/@walid-hamdi">
+          <Link legacyBehavior href="https://www.youtube.com/@walid-hamdi">
             <a
               className="relative w-14 h-14 block transform transition-all hover:scale-110"
               target="_blank"
