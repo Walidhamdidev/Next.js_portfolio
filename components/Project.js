@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Project = ({ title, url, stacks, description }) => {
   return (
-    <Link legacyBehavior passHref href={url}>
-      <motion.a
+    <Link passHref href={url}>
+      <motion.div
         target="_blank"
         initial="hidden"
         animate="visible"
@@ -46,15 +46,13 @@ const Project = ({ title, url, stacks, description }) => {
           ))}
         </div>
         <div className=" mt-2">
-          <Link legacyBehavior href={url}>
-            <a target="_blank">
-              <span className="inline-block border-2 m-1 shadow-xl bg-yellow-500 transition hover:scale-105  px-3 py-2 text-black rounded">
-                Demo
-              </span>
-            </a>
+          <Link href={url} passHref target="_blank">
+            <span className="inline-block border-2 m-1 shadow-xl bg-yellow-500 transition hover:scale-105  px-3 py-2 text-black rounded">
+              Demo
+            </span>
           </Link>
         </div>
-      </motion.a>
+      </motion.div>
     </Link>
   );
 };

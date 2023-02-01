@@ -53,27 +53,10 @@ function About() {
             <span className="text-yellow-400 hidden md:inline-block">.</span>
           </span>
         </h1>
-        {/* <Link href="https://thenewtunisia.vercel.app/" passHref>
-          <motion.a
-            whileHover={{
-              position: "relative",
-              zIndex: 1,
-              scale: [0.9, 1.1, 1],
-              // rotate: [0, 10, -10, 0],
-              transition: {
-                duration: 0.2,
-              },
-            }}
-            target="_blank"
-            className="bg-yellow-300 mt-4 inline-block  text-black active:bg-yellow-400 text-md px-6 py-3 font-semibold rounded shadow hover:shadow-lg outline-none focus:outline-none"
-          >
-            Discover More
-          </motion.a>
-        </Link> */}
       </div>
       <div className="mt-12 lg:mt-32 lg:ml-20 text-left">
         <bottom className="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-white animate-bounce hover:text-yellow-400 hover:bg-black transition duration-300 ease-in-out cursor-pointer">
-          <Link legacyBehavior href="#projects" passHref>
+          <Link href="#projects" passHref>
             <svg
               className="w-6 h-6"
               fill="none"

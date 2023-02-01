@@ -102,8 +102,8 @@ export default function Navbar() {
       <nav className="container flex items-center justify-around">
         <div className="flex">
           {/* cursor-pointer */}
-          <Link legacyBehavior href="/#about" className="">
-            <a
+          <Link passHref href="/#about" className="">
+            <div
               className={`
             bg-white align-middle 
             overflow-hidden 
@@ -115,12 +115,12 @@ export default function Navbar() {
             `}
             >
               <Image
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                cover={true}
                 src="/images/profile.png"
                 alt="profile logo picture"
               />
-            </a>
+            </div>
           </Link>
           <div className="w-14 h-14 md:hidden"></div>
         </div>
@@ -129,7 +129,7 @@ export default function Navbar() {
           onClick={() => setShowNav(!showNav)}
         >
           <h1 className="block  relative w-12 h-12">
-            <Image layout="fill" src="/images/menu.svg" alt="menu" />
+            <Image fill={true} src="/images/menu.svg" alt="menu" />
           </h1>
         </button>
 
@@ -168,8 +168,8 @@ export default function Navbar() {
                 : ""
             } `}
           >
-            <Link legacyBehavior href="#about" passHref>
-              <a onClick={handleScrollSection}>About</a>
+            <Link href="#about" passHref onClick={handleScrollSection}>
+              About
             </Link>
           </li>
           <li
@@ -182,8 +182,8 @@ export default function Navbar() {
                 : ""
             }`}
           >
-            <Link legacyBehavior href="#projects" passHref>
-              <a onClick={handleScrollSection}>Projects</a>
+            <Link onClick={handleScrollSection} href="#projects" passHref>
+              Projects
             </Link>
           </li>
           <li
@@ -200,8 +200,8 @@ export default function Navbar() {
                 : ""
             }`}
           >
-            <Link legacyBehavior href="#skills" passHref>
-              <a onClick={handleScrollSection}> Skills</a>
+            <Link onClick={handleScrollSection} href="#skills" passHref>
+              Skills
             </Link>
           </li>
           <li
@@ -218,38 +218,38 @@ export default function Navbar() {
                  : ""
              }`}
           >
-            <Link legacyBehavior href="#contact" passHref>
-              <a onClick={handleScrollSection}>Contact</a>
+            <Link onClick={handleScrollSection} href="#contact" passHref>
+              Contact
             </Link>
           </li>
         </motion.ul>
         {/* social media linkedin and github */}
         <div className="flex items-center space-x-2 ">
           {/* cursor-pointer */}
-          <Link legacyBehavior href="https://github.com/walid-hamdi">
-            <a
-              className="relative w-14 h-14 block transform transition-all hover:scale-110"
-              target="_blank"
-            >
-              <Image
-                layout="fill"
-                src="/images/github.svg"
-                alt="github social media icon"
-              />
-            </a>
+          <Link
+            passHref
+            className="relative w-14 h-14 block transform transition-all hover:scale-110"
+            target="_blank"
+            href="https://github.com/walid-hamdi"
+          >
+            <Image
+              fill={true}
+              src="/images/github.svg"
+              alt="github social media icon"
+            />
           </Link>
 
-          <Link legacyBehavior href="https://www.youtube.com/@walid-hamdi">
-            <a
-              className="relative w-14 h-14 block transform transition-all hover:scale-110"
-              target="_blank"
-            >
-              <Image
-                layout="fill"
-                src="/images/youtube.svg"
-                alt="youtube social media icon"
-              />
-            </a>
+          <Link
+            passHref
+            className="relative w-14 h-14 block transform transition-all hover:scale-110"
+            target="_blank"
+            href="https://www.youtube.com/@walid-hamdi"
+          >
+            <Image
+              fill={true}
+              src="/images/youtube.svg"
+              alt="youtube social media icon"
+            />
           </Link>
         </div>
       </nav>
