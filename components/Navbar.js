@@ -46,6 +46,7 @@ export default function Navbar() {
   //   // clean up
   //   return () => window.removeEventListener("click", handleClick);
   // }, [showNav]);
+  // another comment
 
   useEffect(() => {
     const showBg = () => {
