@@ -11,7 +11,10 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="description" content="Portfolio of Walid Hamdi" />
+          <meta
+            name="description"
+            content="Walid Hamdi as web developer | flutter | ai "
+          />
         </Head>
         <body className="h-screen w-screen font-body bg-gradient-to-r from-[#2c3e50] to-[#000000] tracking-wider  text-white">
           <Main />
