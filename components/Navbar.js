@@ -1,3 +1,4 @@
+"use-client";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -29,19 +30,22 @@ export default function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    // only add the event listener when the dropdown is opened
-    if (!showNav) return;
-    function handleClick(event) {
-      if (dropdown.current && !dropdown.current.contains(event.target)) {
-        setShowNav(false);
-      }
-    }
-    window.addEventListener("click", handleClick);
+  // useEffect(() => {
+  //   const handleClick = (event) => {
+  //     if (
+  //       dropdown.current &&
+  //       showNav &&
+  //       !dropdown.current.contains(event.target)
+  //     ) {
+  //       setShowNav(false);
+  //     }
+  //   };
 
-    // clean up
-    return () => window.removeEventListener("click", handleClick);
-  }, [showNav]);
+  //   window.addEventListener("click", handleClick);
+
+  //   // clean up
+  //   return () => window.removeEventListener("click", handleClick);
+  // }, [showNav]);
 
   useEffect(() => {
     const showBg = () => {
@@ -102,9 +106,10 @@ export default function Navbar() {
       <nav className="container flex items-center justify-around">
         <div className="flex">
           {/* cursor-pointer */}
-          <Link passHref href="/#about" className="">
-            <div
-              className={`
+          <Link
+            passHref
+            href="/#about"
+            className={`
             bg-white align-middle 
             overflow-hidden 
             rounded-full 
@@ -113,26 +118,34 @@ export default function Navbar() {
             transition-all 
             hover:scale-110
             `}
-            >
-              <Image
-                fill={true}
-                cover={true}
-                src="/images/profile.png"
-                alt="profile logo picture"
-              />
-            </div>
+          >
+            <Image
+              fill="true"
+              cover="true"
+              sizes="100%"
+              priority="true"
+              src="/images/profile.png"
+              alt="profile logo picture"
+            />
           </Link>
           <div className="w-14 h-14 md:hidden"></div>
         </div>
         <button
           className="inline-block lg:hidden"
-          onClick={() => setShowNav(!showNav)}
+          onClick={() => {
+            setShowNav(!showNav);
+          }}
         >
           <h1 className="block  relative w-12 h-12">
-            <Image fill={true} src="/images/menu.svg" alt="menu" />
+            <Image
+              fill="true"
+              sizes="100%"
+              priority="true"
+              src="/images/menu.svg"
+              alt="menu"
+            />
           </h1>
         </button>
-
         <motion.ul
           animate={isSmallScreen() ? (showNav ? "open" : "closed") : {}}
           variants={variants}
@@ -233,7 +246,9 @@ export default function Navbar() {
             href="https://github.com/walid-hamdi"
           >
             <Image
-              fill={true}
+              fill="true"
+              sizes="100%"
+              priority="true"
               src="/images/github.svg"
               alt="github social media icon"
             />
@@ -246,7 +261,9 @@ export default function Navbar() {
             href="https://www.youtube.com/@walid-hamdi"
           >
             <Image
-              fill={true}
+              fill="true"
+              sizes="100%"
+              priority="true"
               src="/images/youtube.svg"
               alt="youtube social media icon"
             />
