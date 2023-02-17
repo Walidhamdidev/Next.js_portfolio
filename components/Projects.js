@@ -18,7 +18,7 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description: "Voice based communication system platform.",
+      description: "Empower citizens with a web app integrating multiple sector communication systems, with a voice platform for opinions & insights using ML. Real-time data to decision-makers for a more informed, engaged and responsive society in Tunisia.",
     },
     {
       title: "injestic.com",
@@ -32,7 +32,7 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description:
-        "Store to sell products online based on shopify as a backend.",
+        "E-commerce platform! Designed specifically for Shopify stores, this platform seamlessly integrates with your existing store to deliver an enhanced shopping experience to your customers. Built with TailwindCSS, GraphQL, and the Context API, this platform is fast, modern, and user-friendly. With a clean and responsive design.",
     },
   ];
 
