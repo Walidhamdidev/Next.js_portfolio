@@ -32,7 +32,7 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description:
-        "E-commerce platform! Designed specifically for Shopify stores, this platform seamlessly integrates with your existing store to deliver an enhanced shopping experience to your customers. Built with TailwindCSS, GraphQL, and the Context API, this platform is fast, modern, and user-friendly. With a clean and responsive design.",
+        "E-commerce platform! Designed specifically for Shopify store, this platform seamlessly integrates with an existing store to deliver an enhanced shopping experience to customers.",
     },
   ];
 
