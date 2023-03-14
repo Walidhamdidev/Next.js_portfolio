@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 
 const Project = ({ title, url, stacks, description }) => {
   return (
-    <motion.div
+    <motion.a
       initial="hidden"
-      onClick={() => window.open(url, "new_window")}
+      target="_blank"
+      href={url}
       animate="visible"
       whileHover={{
         position: "relative",
@@ -51,7 +52,7 @@ const Project = ({ title, url, stacks, description }) => {
           </span>
         </Link>
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 

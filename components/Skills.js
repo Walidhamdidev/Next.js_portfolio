@@ -13,17 +13,19 @@ const Skills = () => {
     { skill: "TailwindCSS", type: "cssFramework" },
     { skill: "React.js", type: "frontend" },
     { skill: "Next.js", type: "frontend" },
-    { skill: "Redux Toolkit", type: "frontend" },
+    { skill: "Redux", type: "frontend" },
     { skill: "Node.js", type: "backend" },
-    { skill: "Strapi", type: "new" },
+    { skill: "Strapi", type: "backend" },
     { skill: "Flutter", type: "new" },
+    { skill: "React Native", type: "new" },
   ];
 
   return (
     <div className="mt-14  mx-auto lg:px-52 px-5" id="skills">
-      <h1 className="border-b-4 inline-flex pb-1 text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
+      <h1 className="border-b-4 inline-flex pb-1 text-white  font-bold text-3xl md:text-4xl  border-yellow-500">
         Technical skills
       </h1>
+      <h3 className=" mb-10">(Build, Test, Deploy)</h3>
 
       <ul className="">
         {items.map((item, index) => (

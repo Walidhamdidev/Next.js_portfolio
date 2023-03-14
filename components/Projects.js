@@ -18,7 +18,8 @@ const Projects = () => {
         { title: "CSS modules" },
         { title: "Framer  motion" },
       ],
-      description: "Voice based communication system platform.",
+      description:
+        "Empower citizens with a web app integrating multiple sector communication systems, with a voice platform for opinions & insights using ML. Real-time data to decision-makers for a more informed, engaged and responsive society in Tunisia.",
     },
     {
       title: "injestic.com",
@@ -32,14 +33,14 @@ const Projects = () => {
         { title: "Framer  motion" },
       ],
       description:
-        "Store to sell products online based on shopify as a backend.",
+        "E-commerce platform! Designed specifically for Shopify store, this platform seamlessly integrates with an existing store to deliver an enhanced shopping experience to customers.",
     },
   ];
 
   return (
     <div className=" mx-auto lg:px-52 px-5" id="projects">
       <h1 className="border-b-4 inline-flex pb-1  text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
-        My Recent Works
+        Projects
       </h1>
 
       <div className="grid gap-5   md:grid-cols-2 ">
