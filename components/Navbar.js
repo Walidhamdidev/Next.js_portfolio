@@ -30,24 +30,6 @@ export default function Navbar() {
     };
   }, []);
 
-  // useEffect(() => {
-  //   const handleClick = (event) => {
-  //     if (
-  //       dropdown.current &&
-  //       showNav &&
-  //       !dropdown.current.contains(event.target)
-  //     ) {
-  //       setShowNav(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("click", handleClick);
-
-  //   // clean up
-  //   return () => window.removeEventListener("click", handleClick);
-  // }, [showNav]);
-  // another comment
-
   useEffect(() => {
     const showBg = () => {
       if (window.scrollY > 250) {

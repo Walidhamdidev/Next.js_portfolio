@@ -40,7 +40,7 @@ const Projects = () => {
   return (
     <div className=" mx-auto lg:px-52 px-7" id="projects">
       <h1 className="border-b-4 inline-flex pb-1  text-white  mb-10 font-bold text-3xl md:text-4xl  border-yellow-500">
-        Projects
+        Recent works
       </h1>
 
       <div className="grid gap-5   md:grid-cols-2 ">

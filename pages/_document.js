@@ -13,7 +13,7 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Walid Hamdi as web developer | flutter | ai "
+            content="Walid Hamdi as web developer | flutter | react native | ai "
           />
         </Head>
         <body className="h-screen w-screen font-body bg-gradient-to-r from-[#2c3e50] to-[#000000] tracking-wider  text-white">
