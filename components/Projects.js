@@ -2,7 +2,35 @@ import Project from "../components/Project";
 
 const items = [
   {
-    title: "thenewtunisia.com",
+    title: "Restaurant Reservation",
+    url: "https://reservation-restaurant.vercel.app/",
+    stacks: [
+      { title: "Next.js" },
+      { title: "TailwindCSS" },
+      { title: "Context API" },
+      { title: "PostgreSQL" },
+      { title: "Prisma" },
+      { title: "TypeScript" },
+    ],
+    description:
+      "This advanced restaurant reservation system is built with Next.js 13, Tailwind CSS, TypeScript, Prisma, and PostgreSQL. It allows for efficient and secure online table bookings and management.",
+  },
+  {
+    title: "Rental Movies",
+    url: "https://rental-movies.vercel.app/",
+    stacks: [
+      { title: "React.js" },
+      { title: "TailwindCSS" },
+      { title: "Context API" },
+      { title: "Strapi" },
+      { title: "Sentry" },
+    ],
+    description:
+      "This rental movie app uses React.js and Tailwind CSS for styling, with reusable components, services for managing CRUD, auth, genres, and movies, and hooks like withRouter and useLocation. It integrates with Strapi CMS for authentication and data management and uses Sentry for error monitoring.",
+  },
+
+  {
+    title: "The New Tunisia",
     url: "https://thenewtunisia.vercel.app/",
 
     stacks: [
@@ -21,7 +49,7 @@ const items = [
       "Empower citizens with a web app integrating multiple sector communication systems, with a voice platform for opinions & insights using ML. Real-time data to decision-makers for a more informed, engaged and responsive society in Tunisia.",
   },
   {
-    title: "injestic.com",
+    title: "InJestic",
     url: "https://injestic.vercel.app/",
     stacks: [
       { title: "Next.js" },
