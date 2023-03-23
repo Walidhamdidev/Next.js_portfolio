@@ -45,7 +45,7 @@ const Project = ({ title, url, stacks, description }) => {
           </span>
         ))}
       </div>
-      <div className=" mt-2">
+      <div className="mt-2">
         <Link href={url} passHref target="_blank">
           <span className="inline-block border-2 m-1 shadow-xl bg-yellow-500 transition hover:scale-105  px-3 py-2 text-black rounded">
             Demo
