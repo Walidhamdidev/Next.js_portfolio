@@ -32,7 +32,7 @@ const Project = ({ title, url, stacks, description }) => {
       // cursor-pointer
       className="w-full h-full p-5 cursor-pointer bg-gray-800 bg-opacity-90 text-white  rounded-sm shadow-md "
     >
-      <p className="font-bold text-2xl uppercase mb-5">{title}</p>
+      <p className="font-bold text-2xl  mb-5">{title}</p>
       <p>{description}</p>
       <div className="mt-5">
         <p className="pb-2 font-semibold">Tech Stack</p>
