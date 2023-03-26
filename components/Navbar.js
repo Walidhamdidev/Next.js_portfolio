@@ -241,7 +241,7 @@ export default function Navbar() {
             passHref
             className="relative w-14 h-14 block transform transition-all hover:scale-110"
             target="_blank"
-            href="https://www.youtube.com/@walidelhamdi"
+            href="https://www.youtube.com/@walidhamdidev"
           >
             <Image
               fill="true"
