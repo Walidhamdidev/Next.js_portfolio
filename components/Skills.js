@@ -8,6 +8,7 @@ const items = [
   { skill: "SQL", type: "foundation" },
   { skill: "NoSQL", type: "foundation" },
   { skill: "Git", type: "foundation" },
+  { skill: "Jest", type: "foundation" },
   { skill: "Docker", type: "foundation" },
   { skill: "TailwindCSS", type: "cssFramework" },
   { skill: "React.js", type: "frontend" },
