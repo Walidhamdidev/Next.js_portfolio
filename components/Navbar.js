@@ -93,12 +93,12 @@ export default function Navbar() {
             passHref
             href="/#about"
             className={`
-            bg-white align-middle 
+             align-middle 
             overflow-hidden 
             rounded-full 
             inline-block relative 
             w-12 h-12 md:w-14 md:h-14 transform 
-            transition-all 
+            transition-all
             hover:scale-110
             `}
           >
@@ -107,7 +107,7 @@ export default function Navbar() {
               cover="true"
               sizes="100%"
               priority="true"
-              src="/images/profile.png"
+              src="/images/profile.jpg"
               alt="profile logo picture"
             />
           </Link>
@@ -226,7 +226,7 @@ export default function Navbar() {
             passHref
             className="relative w-14 h-14 block transform transition-all hover:scale-110"
             target="_blank"
-            href="https://github.com/walid-hamdi"
+            href="https://github.com/walidhamdidev"
           >
             <Image
               fill="true"
@@ -241,7 +241,7 @@ export default function Navbar() {
             passHref
             className="relative w-14 h-14 block transform transition-all hover:scale-110"
             target="_blank"
-            href="https://www.youtube.com/@walid-hamdi"
+            href="https://www.youtube.com/@walidhamdidev"
           >
             <Image
               fill="true"
