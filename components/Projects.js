@@ -9,10 +9,7 @@ const items = [
     stacks: [
       { title: "Next.js" },
       { title: "Peer.js" },
-      { title: "WebRTC" },
-      { title: "Socket.io" },
       { title: "Context API" },
-      // { title: "D3.js" },
       { title: "PWA" },
       { title: "Firebase" },
       { title: "CSS modules" },
@@ -23,20 +20,17 @@ const items = [
       "Empower citizens with a web app integrating multiple sector communication systems, with a voice platform for opinions & insights using ML. Real-time data to decision-makers for a more informed, engaged and responsive society in Tunisia.",
   },
   {
-    title: "Online Therapy",
-    url: "https://github.com/walid-hamdi/Flutter_emotionAi",
+    title: "InJestic",
+    url: "https://injestic.vercel.app/",
     stacks: [
-      { title: "Flutter" },
-      { title: "Express.js" },
-      { title: "WebRTC" },
-      { title: "Socket.IO" },
-      { title: "Tensorflow" },
-      { title: "BLoC" },
-      { title: "Sentry" },
+      { title: "Next.js" },
+      { title: "TailwindCSS" },
+      { title: "Shopify API" },
+      { title: "Context API" },
+      { title: "GraphQL" },
     ],
     description:
-      "The Virtual Emotion Coach & Online Therapy app offers emotional insights through your camera and access to licensed therapists for online therapy sessions. Convenient and accessible mental health support for your emotional well-being.",
-    type: "mobile",
+      "E-commerce platform! Designed specifically for Shopify stores, this platform seamlessly integrates with your existing store to deliver an enhanced shopping experience to your customers.",
   },
 ];
 
