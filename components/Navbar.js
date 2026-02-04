@@ -192,8 +192,8 @@ export default function Navbar() {
                   ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                   : ""
                 : scrollPosition >= 1000.2 && scrollPosition < 1280.2
-                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
-                : ""
+                  ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
+                  : ""
             }`}
           >
             <Link onClick={handleScrollSection} href="#skills" passHref>
@@ -210,8 +210,8 @@ export default function Navbar() {
                    ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
                    : ""
                  : scrollPosition >= 1280.2
-                 ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
-                 : ""
+                   ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
+                   : ""
              }`}
           >
             <Link onClick={handleScrollSection} href="#contact" passHref>
@@ -226,7 +226,7 @@ export default function Navbar() {
             passHref
             className="relative w-14 h-14 block transform transition-all hover:scale-110"
             target="_blank"
-            href="https://github.com/walidhamdidev"
+            href="https://github.com/walid-hamdi"
           >
             <Image
               fill="true"
@@ -241,7 +241,7 @@ export default function Navbar() {
             passHref
             className="relative w-14 h-14 block transform transition-all hover:scale-110"
             target="_blank"
-            href="https://www.youtube.com/@walidhamdidev"
+            href="https://www.youtube.com/@walidellhamdi"
           >
             <Image
               fill="true"

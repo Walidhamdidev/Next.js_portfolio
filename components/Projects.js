@@ -1,11 +1,29 @@
-import Link from "next/link";
 import Project from "../components/Project";
 
 const items = [
   {
+    title: "Fluener",
+    url: "https://fluener.com",
+    stacks: [
+      { title: "Next.js" },
+      { title: "TypeScript" },
+      { title: "PWA" },
+      { title: "Push Notifications" },
+      { title: "Chakra UI" },
+      { title: "Zustand" },
+      { title: "Node.js" },
+      { title: "Socket.io" },
+      { title: "MongoDB" },
+      { title: "Redis" },
+      { title: "AI (TTS/STT/LLM)" },
+      { title: "Sentry" },
+    ],
+    description:
+      "Language-learning platform with interactive communities where users can practice speaking, play engaging games, and win prizes. Features real-time voice practice and gamified learning experiences to boost language skills.",
+  },
+  {
     title: "The New Tunisia",
     url: "https://thenewtunisia.vercel.app/",
-
     stacks: [
       { title: "Next.js" },
       { title: "Peer.js" },
@@ -13,7 +31,7 @@ const items = [
       { title: "PWA" },
       { title: "Firebase" },
       { title: "CSS modules" },
-      { title: "Framer  motion" },
+      { title: "Framer motion" },
       { title: "Sentry" },
     ],
     description:
