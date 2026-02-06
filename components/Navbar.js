@@ -160,7 +160,7 @@ export default function Navbar() {
             hover:text-yellow-500  ${
               // hash === "/#about" ||
               scrollPosition >= 0 && scrollPosition < 580
-                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out"
+                ? "text-yellow-500  md:border-b border-yellow-500 transition duration-700 ease-in-out "
                 : ""
             } `}
           >
