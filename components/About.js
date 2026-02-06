@@ -49,7 +49,7 @@ function About() {
             <span className="text-yellow-400 hidden md:inline-block">,</span>
           </span>{" "}
           <span className="block text-3xl md:text-4xl">
-            a React Developer
+            Fullstack Developer
             <span className="text-yellow-400 hidden md:inline-block">.</span>
           </span>
         </h1>
